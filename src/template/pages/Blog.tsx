@@ -19,7 +19,7 @@ const Navbar = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">Accueil</Link>
         </li>
         <li style={{ borderBottom: '4px solid #6246EA' }}>
           <Link href="/blog">Blogue</Link>
