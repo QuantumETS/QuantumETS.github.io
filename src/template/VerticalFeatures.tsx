@@ -35,7 +35,7 @@ const VerticalFeatures = () => (
         </p>
       </VerticalFeatureRow>
       <VerticalFeatureRow
-        title="QHack2023"
+        title="BIG Quantum Hackathon 2022"
         image={{
           src: '/assets/images/big_quantum_hackathon.png',
           alt: 'QHack 2023 Logo',
@@ -51,11 +51,13 @@ const VerticalFeatures = () => (
         }
       >
         <p>
-          Participation au Big Quantum Hackathon 2022, un concours d
-          informatique quantique aliant technologie et affaire.
+          Participation au Big Quantum Hackathon 2022, un concours
+          d&apos;informatique quantique aliant technologie et le monde des
+          affaires. Cette compétition permet à des étudiants de résoudres des
+          problèmes concrets à l&apos;aide de la technologie quantique.
         </p>
         <p>
-          Des étudiants de l ÉTS on pu terminer parmis les trois premières
+          Des étudiants de l&apos;ÉTS se sont classé parmis les trois premières
           équipes.
         </p>
       </VerticalFeatureRow>
