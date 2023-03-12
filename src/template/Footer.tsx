@@ -56,10 +56,12 @@ const Footer = () => (
           </FooterLinks>
           <FooterLinks title="Contact">
             <li>
-              <Link href="mailto:simon.roy.1@ens.etsmtl.ca">Capitaine</Link>
+              <Link href="mailto:simon.roy.6@ens.etsmtl.ca">Capitaine</Link>
             </li>
             <li>
-              <Link href="mailto:samuel.richard.4@ens.etsmtl.ca">Co-Capitaine</Link>
+              <Link href="mailto:samuel.richard.4@ens.etsmtl.ca">
+                Co-Capitaine
+              </Link>
             </li>
           </FooterLinks>
           <FooterLinks title="Legal">
