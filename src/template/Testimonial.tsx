@@ -22,8 +22,8 @@ const Members = () => (
             alt: 'Random name avatar alt text',
           }}
           author={{
-            name: 'Simon Roy',
-            position: 'Capitaine du club',
+            name: 'Samuel Richard',
+            position: 'Co-capitaine du club',
           }}
         />
         <TestimonialCard

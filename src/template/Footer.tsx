@@ -59,13 +59,7 @@ const Footer = () => (
               <Link href="mailto:simon.roy.1@ens.etsmtl.ca">Capitaine</Link>
             </li>
             <li>
-              <Link href="/">Second link</Link>
-            </li>
-            <li>
-              <Link href="/">Third link</Link>
-            </li>
-            <li>
-              <Link href="/">Forth link</Link>
+              <Link href="mailto:samuel.richard.4@ens.etsmtl.ca">Co-Capitaine</Link>
             </li>
           </FooterLinks>
           <FooterLinks title="Legal">
