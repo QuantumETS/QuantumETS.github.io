@@ -1,5 +1,5 @@
 import { Route } from '../../template/Route';
 
-const Index = () => <Route page="blog" />;
+const Index = () => <Route page="projet" />;
 
 export default Index;

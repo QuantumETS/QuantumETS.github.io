@@ -9,10 +9,10 @@ type IBaseProps = {
 
 const Route = (props: IBaseProps) => (
   <div className="text-gray-600 antialiased">
-    {props.page === 'home' && <Home />}
+    {props.page === 'accueil' && <Home />}
     {props.page === 'contact' && <Contact />}
-    {props.page === 'blog' && <Blog />}
-    {props.page === 'documentation' && <Documentation />}
+    {props.page === 'projet' && <Blog />}
+    {props.page === 'workshop' && <Documentation />}
   </div>
 );
 

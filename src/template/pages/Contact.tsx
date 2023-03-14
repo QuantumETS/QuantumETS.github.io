@@ -17,16 +17,16 @@ const Navbar = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/">Acceuil</Link>
+          <Link href="/">Accueil</Link>
         </li>
         <li>
-          <Link href="/blog">Blogue</Link>
+          <Link href="/projet">Projet</Link>
         </li>
         <li style={{ borderBottom: '4px solid #6246EA' }}>
           <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="/documentation">Documentation</Link>
+          <Link href="/workshop">Workshop</Link>
         </li>
       </NavbarTwoColumns>
     </Section>

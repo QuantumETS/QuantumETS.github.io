@@ -24,13 +24,13 @@ const Navbar = () => (
           <Link href="/">Accueil</Link>
         </li>
         <li>
-          <Link href="/blog">Blogue</Link>
+          <Link href="/projet">Projet</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="/documentation">Documentation</Link>
+          <Link href="/workshop">Workshop</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
