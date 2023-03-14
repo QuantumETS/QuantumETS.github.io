@@ -5,7 +5,7 @@ type ILogoProps = {
 };
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '55' : '44';
+  const size = props.xl ? '60' : '60';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
@@ -13,7 +13,7 @@ const Logo = (props: ILogoProps) => {
   return (
     <div className={`flex items-center text-gray-900 ${fontStyle}`}>
       <img
-        src="/assets/images/logo.png"
+        src="/assets/images/Logo.svg"
         alt="QuantumETS logo"
         style={{
           height: `${size}px`,
