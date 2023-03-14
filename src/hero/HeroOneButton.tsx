@@ -42,7 +42,8 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
           fontSize: '4em',
           position: 'absolute',
           top: '12em',
-          left: '11.5em',
+          marginLeft: '-171px', // final size of the text / 2
+          left: '50%',
           textAlign: 'center',
         }}
       />

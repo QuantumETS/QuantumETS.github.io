@@ -28,12 +28,12 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Random name avatar alt text 2',
+            src: '/assets/images/members/sm.jpg',
+            alt: 'SM',
           }}
           author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
+            name: 'Samuel Montambault',
+            position: 'Membre du club',
           }}
         />
         <TestimonialCard

@@ -44,8 +44,8 @@ const Pricing = () => (
       </PricingCard>
       <PricingCard
         name="ENTERPRISE"
-        price="$99"
-        periodicity="mo"
+        price="Personnalisé"
+        periodicity=""
         description="Best for industry leader"
         button={
           <Link href="/">
