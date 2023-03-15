@@ -1,39 +1,26 @@
-import Link from 'next/link';
-
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
+import { ProjetRow } from '../projet/ProjetRow';
 
 const Projets = () => (
   <Background color="bg-gray-200">
     <Section>
-      <VerticalFeatureRow
+      <ProjetRow
         title="Synthétiseur"
         image={{
-          src: '/assets/images/QHack_2023_logo.png',
+          src: '/assets/images/projet_synth.jpg',
           alt: 'QHack 2023 Logo',
         }}
         isDone={false}
-        action={
-          <Link target="_blank" href="https://qhack.ai/">
-            <Button>Synthétiseur</Button>
-          </Link>
-        }
-        reverse={true}
+        reverse={false}
       >
         <p>
-          Participation à QHack 2023, un hack-a-thon de 1 semaine où plusieurs
-          problèmes quantique étaient présentés.
+          Le synthétiseur est un projet qui a pour but de créer un plugin pour
+          le logiciel de synthèse musicale Ableton Live. Ce plugin permettra de
+          créer des sons à l&rsquo;aide d&rsquo;un ordinateur quantique. Il est
+          actuellement en développement.
         </p>
-        <p>
-          3 équipes qui ont terminés respectivement{' '}
-          <b>
-            25<sup>e</sup>, 137<sup>e</sup> et 176<sup>e</sup> position
-          </b>{' '}
-          sur plus de 726 équipes inscrites! 🎉
-        </p>
-      </VerticalFeatureRow>
+      </ProjetRow>
     </Section>
   </Background>
 );
