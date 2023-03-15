@@ -9,15 +9,15 @@ const Projets = () => (
   <Background color="bg-gray-200">
     <Section>
       <VerticalFeatureRow
-        title="QHack2023"
+        title="Synthétiseur"
         image={{
           src: '/assets/images/QHack_2023_logo.png',
           alt: 'QHack 2023 Logo',
         }}
-        isDone={true}
+        isDone={false}
         action={
           <Link target="_blank" href="https://qhack.ai/">
-            <Button>QHack 2023</Button>
+            <Button>Synthétiseur</Button>
           </Link>
         }
         reverse={true}
@@ -32,33 +32,6 @@ const Projets = () => (
             25<sup>e</sup>, 137<sup>e</sup> et 176<sup>e</sup> position
           </b>{' '}
           sur plus de 726 équipes inscrites! 🎉
-        </p>
-      </VerticalFeatureRow>
-      <VerticalFeatureRow
-        title="BIG Quantum Hackathon 2022"
-        image={{
-          src: '/assets/images/big_quantum_hackathon.png',
-          alt: 'QHack 2023 Logo',
-        }}
-        isDone={true}
-        action={
-          <Link
-            target="_blank"
-            href="https://quebec-quantique.ca/en/bighackathon/"
-          >
-            <Button>Big Quantum Hackathon 2022</Button>
-          </Link>
-        }
-      >
-        <p>
-          Participation au Big Quantum Hackathon 2022, un concours
-          d&apos;informatique quantique aliant technologie et le monde des
-          affaires. Cette compétition permet à des étudiants de résoudres des
-          problèmes concrets à l&apos;aide de la technologie quantique.
-        </p>
-        <p>
-          Des étudiants de l&apos;ÉTS se sont classé parmis les trois premières
-          équipes.
         </p>
       </VerticalFeatureRow>
     </Section>
