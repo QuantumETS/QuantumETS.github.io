@@ -39,6 +39,11 @@ const Footer = () => (
                 Q-Algorithm Zoo
               </Link>
             </li>
+            <li>
+              <Link target="_blank" href="https://github.com/QuantumETS">
+                Github
+              </Link>
+            </li>
           </FooterLinks>
           <FooterLinks title="Affiliation">
             <li>
