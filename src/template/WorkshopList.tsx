@@ -16,7 +16,7 @@ const WorkshopList = () => (
         }}
         isDone={true}
         action={
-          <Link target="_blank" href="https://qhack.ai/">
+          <Link target="_blank" href="">
             <Button>PowerPoint</Button>
           </Link>
         }
@@ -40,10 +40,7 @@ const WorkshopList = () => (
         }}
         isDone={true}
         action={
-          <Link
-            target="_blank"
-            href="https://quebec-quantique.ca/en/bighackathon/"
-          >
+          <Link target="_blank" href="">
             <Button>PowerPoint</Button>
           </Link>
         }
