@@ -8,12 +8,12 @@ const Members = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-4">
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
+            src: '/assets/images/members/simon_roy.png',
             alt: 'Random name avatar alt text',
           }}
           author={{
             name: 'Simon Roy',
-            position: 'Capitaine du club',
+            position: 'Administrateur',
           }}
         />
         <TestimonialCard
@@ -23,17 +23,67 @@ const Members = () => (
           }}
           author={{
             name: 'Samuel Richard',
-            position: 'Co-capitaine du club',
+            position: 'Administrateur',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/sm.jpg',
+            src: '/assets/images/members/samuel_montambault.jpg',
             alt: 'SM',
           }}
           author={{
             name: 'Samuel Montambault',
-            position: 'Membre du club',
+            position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar2.png',
+            alt: 'Random name avatar alt text 2',
+          }}
+          author={{
+            name: 'Vincent Alix-Joly',
+            position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar3.png',
+            alt: 'Random name avatar alt text 2',
+          }}
+          author={{
+            name: 'Guy-Philippe Nadon',
+            position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar2.png',
+            alt: 'Random name avatar alt text 2',
+          }}
+          author={{
+            name: 'Guy-Philippe Nadon',
+            position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar3.png',
+            alt: 'Étudiant en génie logiciel',
+          }}
+          author={{
+            name: 'Jacky Fong',
+            position: 'Lead developer of Something',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar.png',
+            alt: 'Étudiant en génie logiciel',
+          }}
+          author={{
+            name: 'Juliana Delgado',
+            position: 'Étudiante en génie logiciel',
           }}
         />
         <TestimonialCard
@@ -42,58 +92,8 @@ const Members = () => (
             alt: 'Random name avatar alt text 2',
           }}
           author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Daniel Lawson',
-            position: 'Lead developer of Something',
+            name: 'Catarina Castro',
+            position: 'Étudiante en génie logiciel',
           }}
         />
       </div>

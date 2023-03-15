@@ -1,63 +1,45 @@
-import Link from 'next/link';
-
-import { Button } from '../button/Button';
 import { Section } from '../layout/Section';
 import { PricingCard } from '../pricing/PricingCard';
 import { PricingFeature } from '../pricing/PricingFeature';
 
 const Pricing = () => (
-  <Section title="Plans partenariats" subtitle="Prix">
+  <Section title="Plans partenariats" subtitle="Partenariat">
     <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
       <PricingCard
-        name="Argent"
-        price="$1k"
+        name="Bronze"
+        price="$250-499"
         periodicity="ans"
-        description="Merci"
-        button={
-          <Link href="/">
-            <Button full>Get Started</Button>
-          </Link>
-        }
+        description=""
+        button={undefined}
       >
-        <PricingFeature text="1 Team Members" />
-        <PricingFeature text="1 Website" />
-        <PricingFeature text="1 GB Storage" />
-        <PricingFeature text="1 TB Transfer" />
-        <PricingFeature text="Email Support" />
+        <PricingFeature text="Logo de taille petite sur le site web" />
+        <PricingFeature text="Lien vers l&rsquo;entreprise" />
+      </PricingCard>
+      <PricingCard
+        name="Argent"
+        price="$500-999"
+        periodicity="ans"
+        description=""
+        button={undefined}
+      >
+        <PricingFeature text="Logo de taille moyenne sur le site web" />
+        <PricingFeature text="Description de l&rsquo;entreprise" />
+        <PricingFeature text="Lien vers l&rsquo;entreprise" />
+        <PricingFeature text="Évènement corporatif" />
       </PricingCard>
       <PricingCard
         name="Or"
-        price="$1.5k"
+        price=">1000$"
         periodicity="ans"
-        description="Best for small teams"
-        button={
-          <Link href="/">
-            <Button full>Get Started</Button>
-          </Link>
-        }
+        description=""
+        button={undefined}
       >
-        <PricingFeature text="5 Team Members" />
-        <PricingFeature text="5 Website" />
-        <PricingFeature text="5 GB Storage" />
-        <PricingFeature text="5 TB Transfer" />
-        <PricingFeature text="Email Support" />
-      </PricingCard>
-      <PricingCard
-        name="ENTERPRISE"
-        price="Personnalisé"
-        periodicity=""
-        description="Best for industry leader"
-        button={
-          <Link href="/">
-            <Button full>Get Started</Button>
-          </Link>
-        }
-      >
-        <PricingFeature text="30 Team Members" />
-        <PricingFeature text="30 Website" />
-        <PricingFeature text="30 GB Storage" />
-        <PricingFeature text="30 TB Transfer" />
-        <PricingFeature text="Email Support" />
+        <PricingFeature text="Logo de grande taille sur le site web" />
+        <PricingFeature text="Description de l&rsquo;entreprise" />
+        <PricingFeature text="Lien vers l&rsquo;entreprise" />
+        <PricingFeature text="Évènement corporatif" />
+        <PricingFeature text="Logo sur les t-shirts de compétition" />
+        <PricingFeature text="Promotion de l&rsquo;entreprise dans le serveur Discord" />
       </PricingCard>
     </div>
   </Section>
