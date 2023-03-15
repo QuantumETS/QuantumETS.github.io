@@ -32,3 +32,4 @@ local
 
 # vercel
 .vercel
+out/tsconfig.tsbuildinfo
