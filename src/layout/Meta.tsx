@@ -21,19 +21,19 @@ const Meta = (props: IMetaProps) => (
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" key="apple" />
       <link
         rel="icon"
-        type="image/png"
+        type="image/svg"
         sizes="32x32"
-        href="/favicon-32x32.png"
+        href="/assets/images/Logo.svg"
         key="icon32"
       />
       <link
         rel="icon"
-        type="image/png"
+        type="image/svg"
         sizes="16x16"
-        href="/favicon-16x16.png"
+        href="/assets/images/Logo.svg"
         key="icon16"
       />
-      <link rel="icon" href="/favicon.ico" key="favicon" />
+      <link rel="icon" href="/assets/images/logo.ico" key="favicon" />
     </Head>
     <NextSeo
       title={props.title}
