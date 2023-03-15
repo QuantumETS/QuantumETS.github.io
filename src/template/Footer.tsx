@@ -20,20 +20,6 @@ const Footer = () => (
             />
           </div>
 
-          <FooterLinks title="Resources">
-            <li>
-              <Link href="/">First link</Link>
-            </li>
-            <li>
-              <Link href="/">Second link</Link>
-            </li>
-            <li>
-              <Link href="/">Third link</Link>
-            </li>
-            <li>
-              <Link href="/">Forth link</Link>
-            </li>
-          </FooterLinks>
           <FooterLinks title="Ressources">
             <li>
               <Link
@@ -54,28 +40,11 @@ const Footer = () => (
               </Link>
             </li>
           </FooterLinks>
-          <FooterLinks title="Contact">
+          <FooterLinks title="Affiliation">
             <li>
-              <Link href="mailto:simon.roy.6@ens.etsmtl.ca">Capitaine</Link>
-            </li>
-            <li>
-              <Link href="mailto:samuel.richard.4@ens.etsmtl.ca">
-                Co-Capitaine
+              <Link href="https://www.etsmtl.ca/">
+                École de technologie supérieure
               </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Legal">
-            <li>
-              <Link href="/">First link</Link>
-            </li>
-            <li>
-              <Link href="/">Second link</Link>
-            </li>
-            <li>
-              <Link href="/">Third link</Link>
-            </li>
-            <li>
-              <Link href="/">Forth link</Link>
             </li>
           </FooterLinks>
         </div>
