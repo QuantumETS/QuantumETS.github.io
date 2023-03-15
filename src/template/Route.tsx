@@ -1,7 +1,7 @@
-import { Blog } from './pages/Blog';
+import { Accueil } from './pages/Accueil';
 import { Contact } from './pages/Contact';
-import { Documentation } from './pages/Documentation';
-import { Home } from './pages/Home';
+import { Projet } from './pages/Projet';
+import { Workshop } from './pages/Workshop';
 
 type IBaseProps = {
   page: string;
@@ -9,10 +9,10 @@ type IBaseProps = {
 
 const Route = (props: IBaseProps) => (
   <div className="text-gray-600 antialiased">
-    {props.page === 'accueil' && <Home />}
+    {props.page === 'accueil' && <Accueil />}
     {props.page === 'contact' && <Contact />}
-    {props.page === 'projet' && <Blog />}
-    {props.page === 'workshop' && <Documentation />}
+    {props.page === 'projet' && <Projet />}
+    {props.page === 'workshop' && <Workshop />}
   </div>
 );
 

@@ -12,13 +12,15 @@ import { Features } from '../Features';
 import { Footer } from '../Footer';
 import { Hero } from '../Hero';
 import { Logo } from '../Logo';
+// import { Pricing } from './Pricing';
+// import { Testimonial } from './Testimonial';
 import { VerticalFeatures } from '../VerticalFeatures';
 
 const Navbar = () => (
   <Background color="bg-gray-200">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
+        <li style={{ borderBottom: '4px solid #6246EA' }}>
           <Link href="/">Accueil</Link>
         </li>
         <li>
@@ -27,7 +29,7 @@ const Navbar = () => (
         <li>
           <Link href="/contact">Contact</Link>
         </li>
-        <li style={{ borderBottom: '4px solid #6246EA' }}>
+        <li>
           <Link href="/workshop">Workshop</Link>
         </li>
       </NavbarTwoColumns>
@@ -35,7 +37,7 @@ const Navbar = () => (
   </Background>
 );
 
-const Documentation = () => (
+const Accueil = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     {Navbar()}
@@ -49,4 +51,4 @@ const Documentation = () => (
   </div>
 );
 
-export { Documentation };
+export { Accueil };

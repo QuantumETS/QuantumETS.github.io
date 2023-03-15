@@ -21,13 +21,13 @@ const Navbar = () => (
         <li>
           <Link href="/">Accueil</Link>
         </li>
-        <li style={{ borderBottom: '4px solid #6246EA' }}>
+        <li>
           <Link href="/projet">Projet</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
         </li>
-        <li>
+        <li style={{ borderBottom: '4px solid #6246EA' }}>
           <Link href="/workshop">Workshop</Link>
         </li>
       </NavbarTwoColumns>
@@ -35,7 +35,7 @@ const Navbar = () => (
   </Background>
 );
 
-const Blog = () => (
+const Workshop = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     {Navbar()}
@@ -49,4 +49,4 @@ const Blog = () => (
   </div>
 );
 
-export { Blog };
+export { Workshop };
