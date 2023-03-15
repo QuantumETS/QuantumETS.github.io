@@ -1,7 +1,7 @@
 import { FeatureElement } from '../feature/FeatureElement';
 import { Section } from '../layout/Section';
 
-const Features = () => (
+const Activites = () => (
   <Section
     title="Club QuantumETS"
     subtitle="Activités"
@@ -68,4 +68,4 @@ const Features = () => (
   </Section>
 );
 
-export { Features };
+export { Activites };

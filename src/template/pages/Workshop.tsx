@@ -1,13 +1,13 @@
 import { Meta } from '../../layout/Meta';
 import { AppConfig } from '../../utils/AppConfig';
+import { Activites } from '../Activites';
 import { Banner } from '../Banner';
 import { Customer } from '../Customer';
+import { Events } from '../Events';
 import { FAQ } from '../FAQ';
-import { Features } from '../Features';
 import { Footer } from '../Footer';
 import { Hero } from '../Hero';
 import { Navbar } from '../Navbar';
-import { VerticalFeatures } from '../VerticalFeatures';
 
 const Workshop = () => (
   <div className="text-gray-600 antialiased">
@@ -15,8 +15,8 @@ const Workshop = () => (
     <Navbar selectedTitle="Workshop" />
     <Hero />
     <Customer />
-    <Features />
-    <VerticalFeatures />
+    <Activites />
+    <Events />
     <FAQ />
     <Banner />
     <Footer />

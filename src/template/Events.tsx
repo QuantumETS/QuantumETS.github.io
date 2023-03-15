@@ -5,7 +5,7 @@ import { Button } from '../button/Button';
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
-const VerticalFeatures = () => (
+const Events = () => (
   <Background color="bg-gray-200">
     <Section>
       <VerticalFeatureRow
@@ -65,4 +65,4 @@ const VerticalFeatures = () => (
   </Background>
 );
 
-export { VerticalFeatures };
+export { Events };
