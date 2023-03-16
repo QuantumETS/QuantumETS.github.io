@@ -16,7 +16,7 @@ const WorkshopList = () => (
         }}
         isDone={true}
         action={
-          <Link target="_blank" href="">
+          <Link href="">
             <Button>PowerPoint</Button>
           </Link>
         }
@@ -40,7 +40,7 @@ const WorkshopList = () => (
         }}
         isDone={true}
         action={
-          <Link target="_blank" href="">
+          <Link href="">
             <Button>PowerPoint</Button>
           </Link>
         }
