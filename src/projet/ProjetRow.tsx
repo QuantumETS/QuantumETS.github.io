@@ -28,6 +28,36 @@ const ProjetRow = (props: IVerticalFeatureRowProps) => {
     }
   );
 
+  const badgeClass = props.isDone
+    ? className(
+        'align-middle',
+        'ml-2',
+        'bg-green-100',
+        'text-green-800',
+        'text-xs',
+        'font-medium',
+        'px-2.5',
+        'py-0.5',
+        'rounded',
+        'dark:bg-green-900',
+        'dark:text-green-300'
+      )
+    : className(
+        'align-middle',
+        'ml-2',
+        'bg-yellow-100',
+        'text-yellow-800',
+        'text-xs',
+        'font-medium',
+        'px-2.5',
+        'py-0.5',
+        'rounded',
+        'dark:bg-yellow-900',
+        'dark:text-yellow-300'
+      );
+
+  const badgeName = props.isDone ? 'Terminé' : 'En cours';
+
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full sm:w-1/2 sm:px-6">
@@ -35,8 +65,7 @@ const ProjetRow = (props: IVerticalFeatureRowProps) => {
           Projet
         </div>
         <h3 className="block text-3xl font-semibold text-gray-900">
-          {props.title}{' '}
-          <div className="text-sm">{props.isDone ? 'Terminé' : 'En cours'}</div>
+          {props.title} <span className={badgeClass}>{badgeName}</span>
         </h3>
 
         <div className="mt-3 text-xl leading-9">{props.description}</div>
