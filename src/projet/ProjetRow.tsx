@@ -61,14 +61,14 @@ const ProjetRow = (props: IVerticalFeatureRowProps) => {
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full sm:w-1/2 sm:px-6">
-        <div className="inline-block text-sm font-bold text-primary-500">
-          Projet
-        </div>
         <h3 className="block text-3xl font-semibold text-gray-900">
           {props.title} <span className={badgeClass}>{badgeName}</span>
         </h3>
 
         <div className="mt-3 text-xl leading-9">{props.description}</div>
+        <h5 className="mt-3 block font-semibold text-gray-900">
+          {'Objectifs : '}
+        </h5>
         <div className="ml-8">
           <div className="mt-3 leading-9">{props.objectif}</div>
         </div>
@@ -78,7 +78,7 @@ const ProjetRow = (props: IVerticalFeatureRowProps) => {
       <div className="w-full p-6 sm:w-1/2">
         <img src={props.image.src} alt={props.image.alt} />
         <h4 className="block text-3xl font-semibold text-gray-900">
-          {'Papiers associé/sources'}
+          {'Papiers associés/sources'}
         </h4>
         <div className="mt-3 leading-9">{props.papier}</div>
       </div>

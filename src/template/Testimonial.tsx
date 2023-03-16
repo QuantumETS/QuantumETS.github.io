@@ -62,7 +62,17 @@ const Members = () => (
             alt: 'Random name avatar alt text 2',
           }}
           author={{
-            name: 'Guy-Philippe Nadon',
+            name: 'Wylliam Cantin-Charawi',
+            position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/avatar3.png',
+            alt: 'Étudiant en génie logiciel',
+          }}
+          author={{
+            name: 'Sean Malo-Lanthier',
             position: 'Étudiant en génie logiciel',
           }}
         />
@@ -73,7 +83,7 @@ const Members = () => (
           }}
           author={{
             name: 'Jacky Fong',
-            position: 'Lead developer of Something',
+            position: 'Étudiant en génie logiciel',
           }}
         />
         <TestimonialCard
