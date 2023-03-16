@@ -9,7 +9,7 @@ const Members = () => (
         <TestimonialCard
           image={{
             src: '/assets/images/members/simon_roy.png',
-            alt: 'Random name avatar alt text',
+            alt: 'Simon Roy',
           }}
           author={{
             name: 'Simon Roy',
@@ -18,8 +18,8 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Random name avatar alt text',
+            src: '/assets/images/members/samuel_richard.jpg',
+            alt: 'Samuel Richard',
           }}
           author={{
             name: 'Samuel Richard',
@@ -29,7 +29,7 @@ const Members = () => (
         <TestimonialCard
           image={{
             src: '/assets/images/members/samuel_montambault.jpg',
-            alt: 'SM',
+            alt: 'Samuel Montambault',
           }}
           author={{
             name: 'Samuel Montambault',
