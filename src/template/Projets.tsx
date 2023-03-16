@@ -25,8 +25,8 @@ const Projets = () => (
         objectif={
           <ul className="list-disc">
             <li>
-              Apprendre sur le traitement de signaux avec les ordinateurs
-              quantiques
+              Apprendre davantage sur les algorithmes de traitement de signaux
+              avec les ordinateurs quantiques.
             </li>
             <li>
               Créer un outil qui permet l&apos;utilisation d&apos;un ordinateur
