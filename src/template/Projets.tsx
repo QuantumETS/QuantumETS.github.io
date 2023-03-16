@@ -23,8 +23,8 @@ const Projets = () => (
         </p>
         <ul className="list-disc">
           <li>
-            en apprendre davantage sur le traitement de signaux avec les
-            ordinateurs quantiques
+            en apprendre davantage sur les algorithmes de traitement de signaux
+            avec les ordinateurs quantiques
           </li>
           <li>
             créer une application utilisable par tout le monde qui utilise un
