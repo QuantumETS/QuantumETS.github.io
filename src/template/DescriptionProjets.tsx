@@ -23,7 +23,7 @@ const DescriptionProjets = () => (
         }
       >
         Soutien aux étudiants désirants faire un projet dans le domaine de
-        l&rsquo;informatique quantique avec l&rsquo;équipe du club.
+        l&rsquo;informatique quantique avec des mentors.
       </FeatureElement>
       <FeatureElement
         title="Partenaire"
@@ -40,7 +40,8 @@ const DescriptionProjets = () => (
           </svg>
         }
       >
-        Résolution de problèmes concrêts avec des partenaires externes.
+        Résolution de problèmes concrêts avec des partenaires externes (En
+        développement).
       </FeatureElement>
       <FeatureElement
         title="Variété d'outils"
@@ -75,8 +76,8 @@ const DescriptionProjets = () => (
           </svg>
         }
       >
-        Le clubs offre la possibilité aux étudiants de reproduire des articles
-        scientifiques de difficulté variable.
+        Le club offre la possibilité aux étudiants de reproduire des articles
+        scientifiques.
       </FeatureElement>
     </div>
   </Section>
