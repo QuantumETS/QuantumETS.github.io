@@ -8,7 +8,6 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Bienvenue sur le site de\n'}
             <span className="text-primary-500">QuantumETS</span>
           </>
         }
