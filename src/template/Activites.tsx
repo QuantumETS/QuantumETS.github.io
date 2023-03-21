@@ -1,11 +1,11 @@
-import { FeatureElement } from '../feature/FeatureElement';
-import { Section } from '../layout/Section';
+import { FeatureElement } from "../feature/FeatureElement";
+import { Section } from "../layout/Section";
 
 const Activites = () => (
   <Section
     title="Club QuantumETS"
     subtitle="Activités"
-    description="Voici une liste des activités que QuantumETS participe pour découvrir et approfondir les connaissances de ses membres sur les ordinateurs quantiques."
+    description="Activités auxquelles les membres de QuantumETS participent approfondir leurs connaissances sur l'informatique quantique."
   >
     <div className="grid grid-cols-1 gap-x-4 gap-y-16 sm:grid-cols-2 md:grid-cols-3">
       <FeatureElement
@@ -23,8 +23,10 @@ const Activites = () => (
           </svg>
         }
       >
-        Nous participons à une panoplie d&rsquo;évènements de style Hack-a-thon
-        comme le QHack ou le QcHack.
+        Compétition de programmation quantique où les participants doivent
+        résoudre des problèmes en utilisant des algorithmes quantiques. Souvent
+        le temps de résolution et l'originalité du code sont des critères de
+        jugement.
       </FeatureElement>
       <FeatureElement
         title="Technologies"
@@ -42,11 +44,11 @@ const Activites = () => (
           </svg>
         }
       >
-        Apprentissage des technologies de pointe pour le développement de
-        système quantique (Pennylane, Qiskit, IBM Composer, etc.)
+        Exploration des technologies de pointe en lien avec le développement de
+        systèmes quantiques (Pennylane, Qiskit, IBM Composer, etc.)
       </FeatureElement>
       <FeatureElement
-        title="Connaissances"
+        title="Rencontres"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
