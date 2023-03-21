@@ -1,5 +1,5 @@
-import { FeatureElement } from "../feature/FeatureElement";
-import { Section } from "../layout/Section";
+import { FeatureElement } from '../feature/FeatureElement';
+import { Section } from '../layout/Section';
 
 const Activites = () => (
   <Section
@@ -25,8 +25,8 @@ const Activites = () => (
       >
         Compétition de programmation quantique où les participants doivent
         résoudre des problèmes en utilisant des algorithmes quantiques. Souvent
-        le temps de résolution et l'originalité du code sont des critères de
-        jugement.
+        le temps de résolution et l&apos;originalité du code sont des critères
+        de jugement.
       </FeatureElement>
       <FeatureElement
         title="Technologies"
