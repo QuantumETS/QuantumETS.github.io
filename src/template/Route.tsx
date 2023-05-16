@@ -1,5 +1,6 @@
 import { Accueil } from './pages/Accueil';
 import { Contact } from './pages/Contact';
+import { Notebook } from './pages/Notebook';
 import { Projet } from './pages/Projet';
 import { Workshop } from './pages/Workshop';
 
@@ -12,6 +13,7 @@ const Route = (props: IBaseProps) => (
     {props.page === 'accueil' && <Accueil />}
     {props.page === 'contact' && <Contact />}
     {props.page === 'projet' && <Projet />}
+    {props.page === 'notebook' && <Notebook />}
     {props.page === 'workshop' && <Workshop />}
   </div>
 );
