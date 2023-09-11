@@ -102,21 +102,21 @@ const Notebooks = () => (
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Phase et opérations quantiques"
-            description={<p>Disponible fin mai</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Apprentissage machine quantique"
-            description={<p>Disponible fin mai</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Simulation et chimie"
-            description={<p>Disponible en juillet</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
@@ -133,28 +133,28 @@ const Notebooks = () => (
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Python et Qiskit"
-            description={<p>Disponible en juin</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Manipulation d'un qubit simple"
-            description={<p>Disponible en juin</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Manipulation de plusieurs qubits"
-            description={<p>Disponible en juin</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
         <div style={{ flex: '0 0 48%', marginBottom: '2%' }}>
           <NotebookRow
             title="Algorithmes de base"
-            description={<p>Disponible en juin</p>}
+            description={<p>À venir</p>}
             link=""
           />
         </div>
@@ -164,7 +164,7 @@ const Notebooks = () => (
     <Section title="Snowflake">
       <NotebookRow
         title="Introduction à snowflake"
-        description={<p>Disponible en juillet</p>}
+        description={<p>À venir</p>}
         link=""
       />
     </Section>
