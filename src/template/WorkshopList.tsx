@@ -23,10 +23,10 @@ const WorkshopList = () => (
       >
         <p>
           Cet atelier a pour but de présenter les bases de l&apos;informatique
-          quantique théorique. Il est donné une fois par session et est ouvert
-          à tous les étudiants de l&apos;ÉTS. Les notions de base de la
-          mécanique quantique y sont abordées comme le principe de
-          superposition, de l&apos;intrication, etc.
+          quantique théorique. Il est donné une fois par session et est ouvert à
+          tous les étudiants de l&apos;ÉTS. Les notions de base de la mécanique
+          quantique y sont abordées comme le principe de superposition, de
+          l&apos;intrication, etc.
         </p>
         <p>
           Prochaine date: <b>3 octobre 2023</b>
@@ -49,8 +49,8 @@ const WorkshopList = () => (
           Cet atelier a pour but de présenter les bases de la programmation
           quantique. Il est donné une fois par session et est ouvert à tous les
           étudiants de l&apos;ÉTS. Pour cet atelier, le club utilise Qiskit et
-          les ordinateurs d&apos;IBM pour permettre aux étudiants d&apos;envoyer des
-          programmes quantiques sur de réels ordinateurs quantiques.
+          les ordinateurs d&apos;IBM pour permettre aux étudiants d&apos;envoyer
+          des programmes quantiques sur de réels ordinateurs quantiques.
         </p>
         <p>
           Prochaine date: <b>7 novembre 2023</b>
