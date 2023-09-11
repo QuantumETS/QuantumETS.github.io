@@ -49,7 +49,7 @@ const WorkshopList = () => (
           Cet atelier a pour but de présenter les bases de la programmation
           quantique. Il est donné une fois par session et est ouvert à tous les
           étudiants de l&apos;ÉTS. Pour cet atelier, le club utilise Qiskit et
-          les ordinateurs d'IBM pour permettre aux étudiants d&apos;envoyer des
+          les ordinateurs d&apos;IBM pour permettre aux étudiants d&apos;envoyer des
           programmes quantiques sur de réels ordinateurs quantiques.
         </p>
         <p>
