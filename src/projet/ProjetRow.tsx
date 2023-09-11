@@ -78,7 +78,7 @@ const ProjetRow = (props: IVerticalFeatureRowProps) => {
       <div className="w-full p-6 sm:w-1/2">
         <img src={props.image.src} alt={props.image.alt} />
         <h4 className="block text-3xl font-semibold text-gray-900">
-          {'Papiers associés/sources'}
+          {'Inspirations/sources'}
         </h4>
         <div className="mt-3 leading-9">{props.papier}</div>
       </div>
