@@ -38,21 +38,31 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Random name avatar alt text 2',
+            src: '/assets/images/avatar.png',
+            alt: 'Étudiant en génie logiciel',
           }}
           author={{
-            name: 'Vincent Alix-Joly',
+            name: 'Juliana Delgado',
+            position: 'Étudiante en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/guy-philippe_nadon.png',
+            alt: 'Guy-Philippe Nadon',
+          }}
+          author={{
+            name: 'Guy-Philippe Nadon',
             position: 'Étudiant en génie logiciel',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar3.png',
+            src: '/assets/images/avatar2.png',
             alt: 'Random name avatar alt text 2',
           }}
           author={{
-            name: 'Guy-Philippe Nadon',
+            name: 'Vincent Alix-Joly',
             position: 'Étudiant en génie logiciel',
           }}
         />
@@ -84,16 +94,6 @@ const Members = () => (
           author={{
             name: 'Jacky Fong',
             position: 'Étudiant en génie logiciel',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar.png',
-            alt: 'Étudiant en génie logiciel',
-          }}
-          author={{
-            name: 'Juliana Delgado',
-            position: 'Étudiante en génie logiciel',
           }}
         />
         <TestimonialCard
