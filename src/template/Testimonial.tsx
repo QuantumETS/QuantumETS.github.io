@@ -28,22 +28,12 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/samuel_montambault.jpg',
-            alt: 'Samuel Montambault',
-          }}
-          author={{
-            name: 'Samuel Montambault',
-            position: 'Étudiant en génie logiciel',
-          }}
-        />
-        <TestimonialCard
-          image={{
             src: '/assets/images/avatar.png',
             alt: 'Étudiant en génie logiciel',
           }}
           author={{
             name: 'Juliana Delgado',
-            position: 'Étudiante en génie logiciel',
+            position: 'Administratrice',
           }}
         />
         <TestimonialCard
@@ -53,6 +43,16 @@ const Members = () => (
           }}
           author={{
             name: 'Guy-Philippe Nadon',
+            position: 'Chef de projet',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/samuel_montambault.jpg',
+            alt: 'Samuel Montambault',
+          }}
+          author={{
+            name: 'Samuel Montambault',
             position: 'Étudiant en génie logiciel',
           }}
         />
