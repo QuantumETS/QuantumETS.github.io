@@ -28,7 +28,7 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar.png',
+            src: '/assets/images/members/juliana_delgado.jpg',
             alt: 'Étudiant en génie logiciel',
           }}
           author={{
