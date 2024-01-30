@@ -1,5 +1,6 @@
 import className from 'classnames';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import type { ReactNode } from 'react';
 import { useState } from 'react';
 
@@ -10,6 +11,16 @@ type INavbarProps = {
 
 const NavbarTwoColumns = (props: INavbarProps) => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const router = useRouter();
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const onToggleLanguageClick = (newLocale: string) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
+
+  const changeTo = router.locale === 'en' ? 'fr' : 'en';
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
@@ -25,6 +36,10 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       hidden: !showMenu,
     }
   );
+
+  const languageButtonClass = className('language-switch-btn', {
+    'active-language': router.locale === changeTo,
+  });
 
   return (
     <div className="flex flex-wrap items-center justify-between">
@@ -56,11 +71,36 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       <nav className={navClass}>
         <ul className="navbar flex flex-col rounded bg-white px-5 pt-3 pb-5 text-xl font-medium text-gray-800 sm:flex-row sm:items-center sm:bg-transparent sm:p-0">
           {props.children}
+          <li>
+            <button
+              type="button"
+              onClick={() => onToggleLanguageClick(changeTo)}
+              className={languageButtonClass}
+            >
+              {changeTo}
+            </button>
+          </li>
         </ul>
       </nav>
 
       <style jsx>
         {`
+          .language-switch-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #4a5568; /* Gray border */
+            color: #4a5568; /* Gray text */
+            background-color: transparent;
+            border-radius: 0.375rem; /* TailwindCSS rounded-md */
+            font-size: 0.875rem; /* TailwindCSS text-sm */
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .language-switch-btn:hover,
+          .language-switch-btn.active-language {
+            border-color: #2b6cb0; /* Blue border for hover and active language */
+            color: #2b6cb0; /* Blue text for hover and active language */
+          }
           .navbar :global(a) {
             @apply inline-block w-full;
           }

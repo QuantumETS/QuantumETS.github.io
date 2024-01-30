@@ -1,0 +1,29 @@
+{
+  "descriptionProjetsTitle": "Projects",
+  "descriptionProjetsDescription": "The club offers students the opportunity to participate in projects to develop their skills and knowledge in the field of quantum computing.",
+  "projetsFeature1Title": "Support",
+  "projetsFeature1Description": "Support for students wanting to undertake a project in the field of quantum computing with mentors.",
+  "projetsFeature2Title": "Partner",
+  "projetsFeature2Description": "Solving concrete problems with external partners (In development).",
+  "projetsFeature3Title": "Variety of Tools",
+  "projetsFeature3Description": "Use of various technologies such as Qiskit, Cirq, Q#, Pennylane, braket, etc.",
+  "projetsFeature4Title": "Reproducing Scientific Articles",
+  "projetsFeature4Description": "The club offers students the opportunity to reproduce scientific articles.",
+  "projetsOptimizationTitle": "Energy Consumption Optimization",
+  "projetsOptimizationDescription": "The Éclipse club participates annually in solar vehicle competitions. Using an algorithm to define the optimal speed, this project explores if a quantum solution could improve this method, which currently requires 30 minutes.",
+  "projetsOptimizationObjectives": [
+    "Deepen knowledge on speed optimization with quantum computers.",
+    "Develop a tool to integrate the solar race simulation with the power of a quantum computer.",
+    "Exploit the unique capabilities of quantum computers and explore quantum advantages for the solar race.",
+    "Explore an alternative quantum method to determine optimal speed in changing conditions."
+  ],
+  "projetsSynthesizerTitle": "Synthesizer",
+  "projetsSynthesizerDescription": "We are currently developing an audio plug-in that works with DAWs like Reaper and Ableton Live. This plug-in will be capable of applying audio effects, creating wave tables, and synthesizing sound directly from a quantum computer.",
+  "projetsSynthesizerObjectives": [
+    "Learn more about signal processing algorithms with quantum computers.",
+    "Create a tool that allows the use of a quantum computer in the world of art.",
+    "Consolidate several research papers under one project by creating operators for sound synthesis.",
+    "Utilize an alternative method of sound synthesis that could be useful for creating certain types of sound difficult to achieve with wavetable synthesis.",
+    "Exploit the particular properties of quantum computers and explore the quantum advantage in this field."
+  ]
+}

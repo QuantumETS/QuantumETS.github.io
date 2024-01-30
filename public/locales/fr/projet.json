@@ -1,0 +1,29 @@
+{
+  "descriptionProjetsTitle": "Projets",
+  "descriptionProjetsDescription": "Le club offre la possibilité aux étudiants de participer à des projets pour développer leurs compétences et leurs connaissances dans le domaine de l'informatique quantique.",
+  "projetsFeature1Title": "Soutien",
+  "projetsFeature1Description": "Soutien aux étudiants désirant faire un projet dans le domaine de l'informatique quantique avec des mentors.",
+  "projetsFeature2Title": "Partenaire",
+  "projetsFeature2Description": "Résolution de problèmes concrets avec des partenaires externes (En développement).",
+  "projetsFeature3Title": "Variété d'outils",
+  "projetsFeature3Description": "Utilisation de technologies variées comme Qiskit, Cirq, Q#, Pennylane, braket, etc.",
+  "projetsFeature4Title": "Reproduction d'articles scientifiques",
+  "projetsFeature4Description": "Le club offre la possibilité aux étudiants de reproduire des articles scientifiques.",
+  "projetsOptimizationTitle": "Optimisation de consomation d'énergie",
+  "projetsOptimizationDescription": "Le club Éclipse participe annuellement à des compétitions de véhicules solaires. Utilisant un algorithme pour définir la vitesse optimale, ce projet explore si une solution quantique pourrait améliorer cette méthode qui nécessite actuellement 30 minutes.",
+  "projetsOptimizationObjectives": [
+    "Approfondir les connaissances sur l'optimisation de vitesse avec les ordinateurs quantiques.",
+    "Développer un outil pour intégrer la simulation de la course solaire avec la puissance d'un ordinateur quantique.",
+    "Exploiter les capacités uniques des ordinateurs quantiques et explorer les avantages quantiques pour la course solaire.",
+    "Explorer une méthode alternative quantique pour déterminer la vitesse optimale face aux conditions changeantes."
+  ],
+  "projetsSynthesizerTitle": "Synthétiseur",
+  "projetsSynthesizerDescription": "Nous sommes présentement dans le processus de développement d’un plug-in audio qui fonctionne avec des DAWs comme Reaper et Ableton Live. Ce plug-in sera capable d’appliquer des effets audio, créer des tables d’ondes ainsi que synthétiser du son directement à partir d’un ordinateur quantique.",
+  "projetsSynthesizerObjectives": [
+    "Apprendre davantage sur les algorithmes de traitement de signaux avec les ordinateurs quantiques.",
+    "Créer un outil qui permet l'utilisation d'un ordinateur quantique dans le monde de l'art.",
+    "Consolider plusieurs papiers de recherche sous un même projet en créant des opérateurs pour la synthèse sonore.",
+    "Utilsation d'une méthode alternative de synthèse sonore qui pourrait être utile pour créer certains types de son difficilement faisable par synthèse par table d’ondes.",
+    "Exploiter les propriétés particulières aux ordinateurs quantiques et explorer l’avantage quantique dans ce domaine."
+  ]
+}
