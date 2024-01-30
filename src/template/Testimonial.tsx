@@ -58,12 +58,52 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
+            src: '/assets/images/members/charles_choupin.jpg',
+            alt: 'Charles Choupin',
+          }}
+          author={{
+            name: 'Charles Choupin',
+            position: 'VP Partenaire',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/vincent_richard.jpg',
+            alt: 'Charles Choupin',
+          }}
+          author={{
+            name: 'Vincent Richard',
+            position: 'Recherchiste - QMeeting',
+          }}
+        />
+        <TestimonialCard
+          image={{
             src: '/assets/images/members/samuel_montambault.jpg',
             alt: 'Samuel Montambault',
           }}
           author={{
             name: 'Samuel Montambault',
+            position: 'VP com. interne',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/jacky_fong.jpg',
+            alt: 'Étudiant en génie logiciel',
+          }}
+          author={{
+            name: 'Jacky Fong',
             position: 'Étudiant en génie logiciel',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/catarina.png',
+            alt: 'Catarina Castro',
+          }}
+          author={{
+            name: 'Catarina Castro',
+            position: 'Étudiante en génie logiciel',
           }}
         />
         <TestimonialCard
@@ -94,26 +134,6 @@ const Members = () => (
           author={{
             name: 'Sean Malo-Lanthier',
             position: 'Étudiant en génie logiciel',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Étudiant en génie logiciel',
-          }}
-          author={{
-            name: 'Jacky Fong',
-            position: 'Étudiant en génie logiciel',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Catarina Castro',
-            position: 'Étudiante en génie logiciel',
           }}
         />
       </div>
