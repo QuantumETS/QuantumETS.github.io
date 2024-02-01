@@ -69,11 +69,21 @@ const Members = () => (
         <TestimonialCard
           image={{
             src: '/assets/images/members/vincent_richard.jpg',
-            alt: 'Charles Choupin',
+            alt: 'Vincent Ricard',
           }}
           author={{
-            name: 'Vincent Richard',
+            name: 'Vincent Ricard',
             position: 'Recherchiste - QMeeting',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/julien.jpg',
+            alt: 'Julien Cardinal',
+          }}
+          author={{
+            name: 'Julien Cardinal',
+            position: 'Responsable formation',
           }}
         />
         <TestimonialCard
