@@ -7,7 +7,7 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 interface NavbarProps {
-  selectedTitle: 'Accueil' | 'Projet' | 'Notebook' | 'Contact' | 'Atelier';
+  selectedTitle: 'Accueil' | 'Projet' | 'Apprendre' | 'Partenaire' | 'Atelier';
 }
 
 export const Navbar = ({ selectedTitle }: NavbarProps) => (
@@ -34,21 +34,21 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => (
         </li>
         <li
           style={
-            selectedTitle === 'Notebook'
+            selectedTitle === 'Apprendre'
               ? { borderBottom: '4px solid #6246EA' }
               : {}
           }
         >
-          <Link href="/notebook">Notebook</Link>
+          <Link href="/notebook">Apprendre</Link>
         </li>
         <li
           style={
-            selectedTitle === 'Contact'
+            selectedTitle === 'Partenaire'
               ? { borderBottom: '4px solid #6246EA' }
               : {}
           }
         >
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Partenaire</Link>
         </li>
         <li
           style={

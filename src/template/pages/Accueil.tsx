@@ -9,12 +9,14 @@ import { FAQ } from '../FAQ';
 import { Footer } from '../Footer';
 import { Hero } from '../Hero';
 import { Navbar } from '../Navbar';
+import { Members } from '../Testimonial';
 
 const Accueil = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar selectedTitle="Accueil" />
     <Hero />
+    <Members />
     <Activites />
     <Events />
     <FAQ />

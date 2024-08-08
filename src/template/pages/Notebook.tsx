@@ -8,7 +8,7 @@ import { Notebooks } from '../Notebooks';
 const Notebook = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Navbar selectedTitle="Notebook" />
+    <Navbar selectedTitle="Apprendre" />
     <DescriptionNotebooks />
     <Notebooks />
     <Footer />
