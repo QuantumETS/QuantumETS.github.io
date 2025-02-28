@@ -4,31 +4,17 @@ import { Section } from '../layout/Section';
 
 const Customer = () => (
   <Background color="bg-gray-200">
-    <Section yPadding="py-8">
-      <div className="grid grid-cols-2 sm:grid-cols-6">
+    <Section yPadding="py-8" title="Nos Partenaires">
+      <div className="flex flex-wrap justify-center gap-6">
         <CustomerLogo
-          src="/assets/images/logo2.png"
-          alt="Random company logo"
+          src="/assets/images/AEETS-LOGO-Symbole-ORANGE-RGB-petit.svg"
+          alt="AÉÉTS partenaire proton"
+          className="h-32"
         />
         <CustomerLogo
-          src="/assets/images/logo2.png"
-          alt="Random company logo"
-        />
-        <CustomerLogo
-          src="/assets/images/logo3.png"
-          alt="Random company logo"
-        />
-        <CustomerLogo
-          src="/assets/images/logo2.png"
-          alt="Random company logo"
-        />
-        <CustomerLogo
-          src="/assets/images/logo2.png"
-          alt="Random company logo"
-        />
-        <CustomerLogo
-          src="/assets/images/logo3.png"
-          alt="Random company logo"
+          src="/assets/images/Logo_ETS_SansTypo_FR.png"
+          alt="ÉTS partenaire proton"
+          className="h-32"
         />
       </div>
     </Section>

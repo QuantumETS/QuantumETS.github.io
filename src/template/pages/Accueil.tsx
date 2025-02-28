@@ -2,6 +2,7 @@ import { Meta } from '../../layout/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 import { Activites } from '../Activites';
 import { Banner } from '../Banner';
+import { Customer } from '../Customer';
 // import { Pricing } from './Pricing';
 // import { Testimonial } from './Testimonial';
 import { Events } from '../Events';
@@ -16,6 +17,7 @@ const Accueil = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar selectedTitle="Accueil" />
     <Hero />
+    <Customer />
     <Members />
     <Activites />
     <Events />
