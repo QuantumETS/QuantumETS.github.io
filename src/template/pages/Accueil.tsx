@@ -3,6 +3,7 @@ import { AppConfig } from '../../utils/AppConfig';
 import { Activites } from '../Activites';
 import { Banner } from '../Banner';
 import { Customer } from '../Customer';
+import { EmailList } from '../EmailList';
 // import { Pricing } from './Pricing';
 // import { Testimonial } from './Testimonial';
 import { Events } from '../Events';
@@ -19,6 +20,7 @@ const Accueil = () => (
     <Hero />
     <Customer />
     <Members />
+    <EmailList />
     <Activites />
     <Events />
     <FAQ />
