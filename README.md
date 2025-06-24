@@ -1,151 +1,154 @@
-# Tailwind CSS Landing Page Next JS React
+# QuantumÉTS - Site Web
 
-If you are looking for a Theme focused on SIMPLICITY and FLEXIBILITY, Tailwind CSS Landing Page Next JS is the perfect Tailwind theme to start your project. The theme contains components that are fully responsive and easy to configure built with React, Next.js, Tailwind CSS and TypeScript.
+Ce répertoire contient le code source du club étudiant QuantumÉTS. Il s'agit d'un site web statique construit avec Next.js, Tailwind CSS et TypeScript.
 
-The theme is highly customizable and developer friendly: the theme follows a consistent coding style and frontend architecture.
+## Documentation
 
-### Features
+L'usage générique de ce site web est documenté dans le fichier [README_CSS-Theme.md](docs/README_CSS-Theme.md), qui accompagnait le thème utilisé ici.
 
-- Simplicity
-- Fully responsive design
-- High-quality code
-- Great performance
-- Highly customizable design
-- Full documentation
-- Cross-Browser compatibility
-- Unique Landing Page
-- Combined UI blocks
-- Templates Styled with Tailwind CSS
-- 10+ Designs Blocks and 17+ Components
+La documentation spécifique à notre usage et aux modifications apportées se trouve ci-dessous.
 
-Developer experience first:
+Les problèmes et les demandes de changements sont gérés dans le [dépôt GitHub - Issues](https://github.com/QuantumETS/QuantumETS.github.io/issues).
 
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-- ✅ Strict Mode for TypeScript and React 17
-- ✏️ Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and Airbnb configuration)
-- 🛠 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 Husky for Git Hooks
-- 🚫 Lint-staged for running linters on Git staged files
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
-- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
-- ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-- 🌈 Include a FREE theme
-- 💯 Maximize lighthouse score
+## Contribuer
 
-Built-in feature from Next.js:
+Pour démarrer l'édition en local, vous devez d'abord cloner le dépôt :
 
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
-
-### Philosophy
-
-- Minimal code
-- SEO-friendly
-- 🚀 Production-ready
-
-### Included Components
-
-- Navbar
-- Hero
-- Statistics
-- Features (2+ types)
-- Testimonial
-- Pricing card
-- FAQ
-- Newsletter form
-- Footer
-
-### Requirements
-
-- Node.js and npm
-
-### Getting started
-
-Run the following command on your local environment:
-
+```bash
+git clone https://github.com/QuantumETS/QuantumETS.github.io.git
+cd QuantumETS.github.io
 ```
+
+Ensuite, installez les dépendances :
+
+```bash
 npm install
 ```
 
-Then, you can run locally in development mode with live reload:
+>[!NOTE]
+>`npm` est le gestionnaire de paquets par défaut pour Node.js. Il faut donc d'abord installer Node.js pour pouvoir utiliser `npm`. Vous pouvez télécharger Node.js depuis [nodejs.org](https://nodejs.org/).
 
-```
+## Démarrage
+
+Lorsque les dépendances sont installées, le site peut être démarré en mode développement avec la commande suivante :
+
+```bash
 npm run dev
 ```
 
-Open http://localhost:3000 with your favorite browser to see your project. For your information, Next JS need to take some time to compile the project for your first time.
+Cela lancera le serveur de développement et vous pourrez accéder au site à l'adresse [http://localhost:3000](http://localhost:3000).
 
-```
-.
-├── README.md            # README file
-├── next.config.js       # Next JS configuration
-├── public               # Public folder
-│   └── assets
-│       └── images       # Image used by default template, it can be replaced by your own images
-├── src
-│   ├── background       # Atomic background component
-│   ├── button           # Atomic button component
-│   ├── faq              # Atomic faq component
-│   ├── feature          # Atomic feature component
-│   ├── footer           # Atomic footer component
-│   ├── form             # Atomic form component
-│   ├── hero             # Atomic hero component
-│   ├── layout           # Atomic layout component
-│   ├── navigation       # Atomic navigation component
-│   ├── pages            # Next JS pages
-│   ├── pricing          # Atomic pricing component
-│   ├── stats            # Atomic stats component
-│   ├── styles           # PostCSS style folder with Tailwind
-│   ├── template         # Default template
-│   ├── testimonial      # Atomic testimonial component
-│   └── utils            # Utility folder
-├── tailwind.config.js   # Tailwind CSS configuration file
-└── tsconfig.json        # TypeScript configuration
-```
+## Sections du site internet à maintenir
 
-### Customization
+Plusieurs sections du site demandent une attention particulière pour être maintenues à jour :
 
-You can easily configure the theme. Please change the following file:
+- **Accueil-Membres de l'équipe** : Cette section doit être mise à jour avec les informations des membres actuels du club. Les photos et les descriptions doivent être modifiées pour refléter les membres en fonction de l'année scolaire.
+- **Accueil-Compétitions** : Les informations sur les compétitions doivent être mises à jour pour refléter les résultats et les événements récents.
+- **Accueil-Commanditaires** : Les commanditaires du club doivent être mis à jour pour refléter les partenariats actuels. Les logos et les liens doivent être vérifiés pour s'assurer qu'ils sont corrects.
+- **Apprendre** : Cette section contient les ressources pédagogiques de niveau débutant développées par le club. Elle contient aussi des liens vers les présentations des ateliers et des conférences passées.
 
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/global.css`: your CSS file using Tailwind CSS
-- `utils/AppConfig.ts`: configuration file
-- `src/pages/index.tsx`: the index page of the theme that uses the `Base` component
-- `src/template/Base.tsx`: the `Base` component using component blocks
-- `src/templates/*`: the list of component blocks
-- `src/*`: other folders in src are the atomic components used by components blocks
+### Accueil-Membres de l'équipe
 
-Here is the layer:
+Le contenu de cette section est géré dans le fichier `src/template/Testimonial.tsx`. Chaque membre de l'équipe est représenté par un objet `TestimonialCard` défini dans le fichier `src/members/MemberCard.tsx`. Pour ajouter ou modifier un membre, il suffit de modifier le 
 
-- the entry point: `index.tsx` in `src/pages`
-- the `Base` template: `Base.tsx` in `src/templates`
-- use component blocks from `src/templates/*`
-- use atomic components from `src/*`
-
-### Deploy to production
-
-You can see the results locally in production mode with:
-
-```
-$ npm run build
-$ npm run start
+```ts
+const Members = () => (
+  <Background color="bg-gray-200">
+    <Section title="Membres de l'équipe">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-4">
+        <TestimonialCard
+          image={{
+            src: 'public/assets/john-doe.jpg',
+            alt: 'John Doe',
+          }}
+          author={{
+            name: 'John Doe',
+            position: 'Administrateur',
+          }}
+        />
+      </div>
+    </Section>
+  </Background>
+);
 ```
 
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
+### Accueil-Compétitions
 
-You can create an optimized production build with:
+Le contenu de cette section est géré dans le fichier `src/template/Events.tsx`. Chaque compétition est représentée comme une entrée dans un tableau `table`. Il suffit d'ajouter ou de modifier les entrées en suivant le format 
 
+```ts
+<tr className="align-top">
+  <td className="whitespace-normal px-6 py-4">
+    <Link target="_blank" href="LIEN_VERS_LE_SITE_DE_LA_COMPÉTITION">
+      <div className="text-sm font-medium text-blue-500 underline">
+        Nom de la compétition
+      </div>
+    </Link>
+  </td>
+  <td className="whitespace-normal px-6 py-4">Mois Année de la compétition</td>
+  <td className="whitespace-normal px-6 py-4">
+    <p>
+      Description de notre activité dans la compétition, faits marquants, constitution des équipes, etc.
+    </p>
+  </td>
+  <td className="whitespace-normal px-6 py-4">
+    <span className="inline-flex rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">
+      Statut de la compétition (Terminé, En cours, À venir)
+    </span>
+  </td>
+  <td className="whitespace-normal px-6 py-4">
+    Résultats de la compétition (1er, 2e, 3e, etc. ou mention honorable)
+  </td>
+</tr>
 ```
-npm run build-prod
+
+### Accueil-Commanditaires
+
+Cette section est gérée dans le fichier `src/template/Customer.tsx`. Chaque commanditaire est représenté par un objet `CustomerLogo` défini dans le fichier `src/customers/CustomerLogo.tsx`.
+
+```ts
+<CustomerLogo
+  src="/assets/images/LOGO_DU_COMMANDITAIRE.svg"
+  alt="description du commanditaire"
+  className="h-32"
+/>
 ```
 
-Now, your theme is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
+### Apprendre
 
----
+La section "Apprendre" est gérée à l'aide des fichiers suivants :
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+- `src/template/pages/Notebook.tsx`
+- `src/template/DescriptionNotebooks.tsx`
+- `src/template/Notebooks.tsx`
+
+Les ressources pédagogiques mises de l'avant comportent un bouton avec un lien menant vers le notebook hébergé sur [Deepnote](https://deepnote.com/). S'assurer que les liens sont à jour et publiques.
+
+>[!CAUTION]
+>Le lien des notebook étant public, s'assurer que les permissions sont correctement configurées pour éviter que ceux-ci ne soient modifiés par des personnes non autorisées. Il est recommandé de configurer en mode lecture seulement, sans possibilité d'exécution, puisque l'output est déjà généré et visible dans le notebook.
+
+>[!IMPORTANT]
+>Idéalement, les notebooks sont maintenus à jour régulièrement par les membres du club.
+
+```ts
+{/* src\template\Notebooks.tsx */}
+[...]
+ <NotebookRow
+  title="Nom du Notebook"
+  description={
+    <>
+      <p>
+        Description du notebook...
+      </p>
+    </>
+  }
+  link="https://lien_vers_le_notebook_deepnote.com"
+/>
+[...]
+```
+
+## Déploiement
+
+Le déploiement du site est automatisé via GitHub Actions. Chaque fois qu'une modification est poussée sur la branche `main`, le site est reconstruit et déployé automatiquement en tant que site statique sur GitHub Pages.
+
+Si un déploiement échoue, celui-ci sera visible dans l'onglet [Actions](https://github.com/QuantumETS/QuantumETS.github.io/actions)
