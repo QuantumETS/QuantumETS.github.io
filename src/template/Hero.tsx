@@ -9,6 +9,12 @@ const Hero = () => (
         title={
           <>
             <span className="text-primary-500">QuantumETS</span>
+            {/* TODO: change this title for an image
+             <img
+              className="inline-block h-40 w-auto"
+              src="/assets/images/LogoBanner.svg"
+              alt="Logo"
+            /> */}
           </>
         }
         description="Un club scientifique pour promouvoir l'apprentissage de la programmation d'ordinateur quantique."

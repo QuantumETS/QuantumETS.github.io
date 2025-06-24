@@ -5,6 +5,8 @@ import { TestimonialCard } from '../members/MemberCard';
 const Members = () => (
   <Background color="bg-gray-200">
     <Section title="Membres de l'équipe" subtitle="Membres">
+      {' '}
+      {/* TODO : Remove unnecessary subtitle */}
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-4">
         <TestimonialCard
           image={{

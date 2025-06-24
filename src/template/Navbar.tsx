@@ -32,6 +32,7 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => (
         >
           <Link href="/projet">Projet</Link>
         </li>
+        {/* TODO : Retirer la section Projet */}
         <li
           style={
             selectedTitle === 'Apprendre'
