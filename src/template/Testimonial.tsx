@@ -13,7 +13,7 @@ const Members = () => (
           }}
           author={{
             name: 'Felix Wilhelmy',
-            position: 'Capitaine',
+            position: 'Président',
           }}
         />
         <TestimonialCard
@@ -23,7 +23,7 @@ const Members = () => (
           }}
           author={{
             name: 'Samuel Richard',
-            position: 'Co-capitaine',
+            position: 'Vice-président',
           }}
         />
         <TestimonialCard
