@@ -98,8 +98,8 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Xavier Bergeron ',
+            src: '/assets/images/members/xavier_bergeron.jpg',
+            alt: 'Xavier Bergeron',
           }}
           author={{
             name: 'Xavier Bergeron',
