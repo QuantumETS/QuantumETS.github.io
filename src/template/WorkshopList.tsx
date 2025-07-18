@@ -28,9 +28,6 @@ const WorkshopList = () => (
           quantique y sont abordées comme le principe de superposition, de
           l&apos;intrication, etc.
         </p>
-        <p>
-          Prochaine date: <b>3 octobre 2023</b>
-        </p>
       </WorkshopRow>
       <WorkshopRow
         title="Introduction à la programmation quantique"
@@ -51,9 +48,6 @@ const WorkshopList = () => (
           étudiants de l&apos;ÉTS. Pour cet atelier, le club utilise Qiskit et
           les ordinateurs d&apos;IBM pour permettre aux étudiants d&apos;envoyer
           des programmes quantiques sur de réels ordinateurs quantiques.
-        </p>
-        <p>
-          Prochaine date: <b>7 novembre 2023</b>
         </p>
       </WorkshopRow>
     </Section>
