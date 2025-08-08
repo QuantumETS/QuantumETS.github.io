@@ -8,12 +8,12 @@ const Members = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-4">
         <TestimonialCard
           image={{
-            src: '/assets/images/members/simon_roy.png',
-            alt: 'Simon Roy',
+            src: '/assets/images/members/felix_wilhelmy.jpg',
+            alt: 'Felix Wilhelmy',
           }}
           author={{
-            name: 'Simon Roy',
-            position: 'Administrateur',
+            name: 'Felix Wilhelmy',
+            position: 'Président',
           }}
         />
         <TestimonialCard
@@ -23,37 +23,7 @@ const Members = () => (
           }}
           author={{
             name: 'Samuel Richard',
-            position: 'Administrateur',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/juliana_delgado.jpg',
-            alt: 'Étudiant en génie logiciel',
-          }}
-          author={{
-            name: 'Juliana Delgado',
-            position: 'Administratrice',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/guy-philippe_nadon.png',
-            alt: '',
-          }}
-          author={{
-            name: 'Guy-Philippe Nadon',
-            position: 'Chef de projet',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/felix_wilhelmy.jpg',
-            alt: 'Felix Wilhelmy',
-          }}
-          author={{
-            name: 'Felix Wilhelmy',
-            position: 'VP Compétition',
+            position: 'Vice-président',
           }}
         />
         <TestimonialCard
@@ -63,17 +33,7 @@ const Members = () => (
           }}
           author={{
             name: 'Charles Choupin',
-            position: 'VP Partenaire',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/vincent_richard.jpg',
-            alt: 'Vincent Ricard',
-          }}
-          author={{
-            name: 'Vincent Ricard',
-            position: 'Recherchiste - QMeeting',
+            position: 'Trésorier',
           }}
         />
         <TestimonialCard
@@ -83,67 +43,67 @@ const Members = () => (
           }}
           author={{
             name: 'Julien Cardinal',
-            position: 'Responsable formation',
+            position: 'VP formation',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/samuel_montambault.jpg',
-            alt: 'Samuel Montambault',
+            src: '/assets/images/members/guy-philippe_nadon.png',
+            alt: 'Guy-Philippe Nadon',
           }}
           author={{
-            name: 'Samuel Montambault',
-            position: 'VP com. interne',
+            name: 'Guy-Philippe Nadon',
+            position: 'Administrateur',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/jacky_fong.jpg',
-            alt: 'Étudiant en génie logiciel',
+            src: '/assets/images/members/gabriel_lemay.png',
+            alt: 'Gabriel Lemay',
           }}
           author={{
-            name: 'Jacky Fong',
-            position: 'Étudiant en génie logiciel',
+            name: 'Gabriel Lemay',
+            position: 'Administrateur',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/catarina.png',
-            alt: 'Catarina Castro',
+            src: '/assets/images/members/simon_roy.png',
+            alt: 'Simon Roy',
           }}
           author={{
-            name: 'Catarina Castro',
-            position: 'Étudiante en génie logiciel',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Random name avatar alt text 2',
-          }}
-          author={{
-            name: 'Vincent Alix-Joly',
-            position: 'Étudiant en génie logiciel',
+            name: 'Simon Roy',
+            position: 'Fondateur',
           }}
         />
         <TestimonialCard
           image={{
             src: '/assets/images/avatar2.png',
-            alt: 'Random name avatar alt text 2',
+            alt: 'Antoine Lemelin',
           }}
           author={{
-            name: 'Wylliam Cantin-Charawi',
-            position: 'Étudiant en génie logiciel',
+            name: 'Antoine Lemelin',
+            position: 'Membre',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar3.png',
-            alt: 'Étudiant en génie logiciel',
+            src: '/assets/images/avatar2.png',
+            alt: 'Félix Caron',
           }}
           author={{
-            name: 'Sean Malo-Lanthier',
-            position: 'Étudiant en génie logiciel',
+            name: 'Félix Caron',
+            position: 'Membre',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/xavier_bergeron.jpg',
+            alt: 'Xavier Bergeron',
+          }}
+          author={{
+            name: 'Xavier Bergeron',
+            position: 'Membre',
           }}
         />
       </div>
