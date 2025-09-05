@@ -20,7 +20,6 @@ const Footer = () => (
               description={AppConfig.description}
             />
           </div>
-
           <FooterLinks title="Ressources">
             <li>
               <Link
@@ -31,17 +30,7 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link target="_blank" href="https://codebook.xanadu.ai/">
-                Xanadu Codebook
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href="https://quantumalgorithmzoo.org/">
-                Q-Algorithm Zoo
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href="https://github.com/QuantumETS">
+              <Link target="_blank" href={SocialLinks.github}>
                 Github
               </Link>
             </li>
