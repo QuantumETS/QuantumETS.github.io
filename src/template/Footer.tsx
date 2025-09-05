@@ -6,6 +6,7 @@ import { FooterLinks } from '../footer/FooterLinks';
 import { FooterTwoRowsCopyright } from '../footer/FooterTwoRowsCopyright';
 import { Section } from '../layout/Section';
 import { AppConfig } from '../utils/AppConfig';
+import { SocialLinks } from '../utils/SocialLinks';
 import { Logo } from './Logo';
 
 const Footer = () => (
@@ -50,6 +51,14 @@ const Footer = () => (
               <Link href="https://www.etsmtl.ca/">
                 École de technologie supérieure
               </Link>
+            </li>
+          </FooterLinks>
+          <FooterLinks title="Contact">
+            <li>
+              <Link href={SocialLinks.email}>Email</Link>
+            </li>
+            <li>
+              <Link href={SocialLinks.discord}>Discord</Link>
             </li>
           </FooterLinks>
         </div>
