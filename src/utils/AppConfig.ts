@@ -2,6 +2,6 @@ export const AppConfig = {
   site_name: 'QuantumETS',
   title: 'QuantumETS',
   description:
-    "Un club scientifique pour promouvoir l'apprentissage d'ordinateur quantique.",
+    "Club étudiant dédié à la promotion de l'apprentissage et de l'excellence en informatique quantique.",
   locale: 'fr',
 };

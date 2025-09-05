@@ -1,6 +1,7 @@
 import { Background } from '../background/Background';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
+import { AppConfig } from '../utils/AppConfig';
 
 const Hero = () => (
   <Background color="bg-gray-200">
@@ -8,7 +9,7 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            <span className="text-primary-500">QuantumETS</span>
+            <span className="text-primary-500">{AppConfig.title}</span>
             {/* TODO: change this title for an image
              <img
               className="inline-block h-40 w-auto"
@@ -17,7 +18,7 @@ const Hero = () => (
             /> */}
           </>
         }
-        description="Un club scientifique pour promouvoir l'apprentissage de la programmation d'ordinateur quantique."
+        description={AppConfig.description}
         image={{
           src: '/assets/images/hero-image.png',
           alt: 'Hero screenshot',
