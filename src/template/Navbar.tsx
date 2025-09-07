@@ -24,13 +24,13 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
   // - To remove completely: delete the entry (and optionally the page under src/pages/events)
   type EventLink = { href: string; label: string; enabled?: boolean };
   const eventLinks: EventLink[] = [
-    { href: '/events/event-one', label: 'Event One', enabled: true },
+    { href: '/events/QFF25', label: 'Qiskit Fall Fest 2025', enabled: true },
     // { href: '/events/event-example', label: 'Event Example', enabled: false },
   ];
   const activeEventLinks = eventLinks.filter((e) => e.enabled !== false);
 
   return (
-    <Background color="bg-zinc-300">
+    <Background color="bg-gray-200">
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li
