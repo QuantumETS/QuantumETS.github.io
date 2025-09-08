@@ -29,8 +29,16 @@ const schedule: EventScheduleItem[] = [
   {
     title: 'Workshop 3 : Mathematical Representation of Qubits',
     titleHref: '#',
-    date: 'Fourth week of October - Exact date TBA',
+    date: 'First week of November - Exact date TBA',
     description: `Join us for an exploration of the mathematical concepts underlying qubits, revisiting the Bloch Sphere, vector spaces, Dirac notation, and more. This workshop will provide the foundation needed to understand quantum algorithms and their implementation in Qiskit. Suitable for those with a grasp of basic linear algebra.`,
+    location: 'TBA',
+  },
+  {
+    title: 'Conference Day',
+    titleHref: '#',
+    date: 'Mid-November - Exact date TBA',
+    description:
+      'A day of inspiring talks from industry experts, researchers, and community leaders in quantum computing with networking opportunities and panel discussions. Stay tuned for the detailed agenda!',
     location: 'TBA',
   },
 ];
