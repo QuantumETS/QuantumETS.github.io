@@ -46,10 +46,11 @@ Plusieurs sections du site demandent une attention particulière pour être main
 - **Accueil-Compétitions** : Les informations sur les compétitions doivent être mises à jour pour refléter les résultats et les événements récents.
 - **Accueil-Commanditaires** : Les commanditaires du club doivent être mis à jour pour refléter les partenariats actuels. Les logos et les liens doivent être vérifiés pour s'assurer qu'ils sont corrects.
 - **Apprendre** : Cette section contient les ressources pédagogiques de niveau débutant développées par le club. Elle contient aussi des liens vers les présentations des ateliers et des conférences passées.
+- **Événements** : Les pages d’événements personnalisées (bannières, sections de texte, horaires) et le menu déroulant dans la barre de navigation.
 
 ### Accueil-Membres de l'équipe
 
-Le contenu de cette section est géré dans le fichier `src/template/Testimonial.tsx`. Chaque membre de l'équipe est représenté par un objet `TestimonialCard` défini dans le fichier `src/members/MemberCard.tsx`. Pour ajouter ou modifier un membre, il suffit de modifier le 
+Le contenu de cette section est géré dans le fichier `src/template/Testimonial.tsx`. Chaque membre de l'équipe est représenté par un objet `TestimonialCard` défini dans le fichier `src/members/MemberCard.tsx`. Pour ajouter ou modifier un membre, il suffit de modifier le
 
 ```ts
 const Members = () => (
@@ -74,7 +75,7 @@ const Members = () => (
 
 ### Accueil-Compétitions
 
-Le contenu de cette section est géré dans le fichier `src/template/Events.tsx`. Chaque compétition est représentée comme une entrée dans un tableau `table`. Il suffit d'ajouter ou de modifier les entrées en suivant le format 
+Le contenu de cette section est géré dans le fichier `src/template/Events.tsx`. Chaque compétition est représentée comme une entrée dans un tableau `table`. Il suffit d'ajouter ou de modifier les entrées en suivant le format
 
 ```ts
 <tr className="align-top">
@@ -146,6 +147,57 @@ Les ressources pédagogiques mises de l'avant comportent un bouton avec un lien 
 />
 [...]
 ```
+
+### Événements
+
+Les pages d’événements utilisent des composants dédiés et un menu déroulant dans la barre de navigation.
+
+Composants disponibles (définis dans `src/template/pages/Events.tsx`):
+
+- `EventTitle`: bannière avec titre, logo optionnel et dégradé.
+- `EventText`: section « header + body » répétable.
+- `EventSchedule`: tableau avec colonnes Title (peut être un lien), Date, Description, Location.
+- `EventLayout`: gabarit qui inclut la barre de navigation et le pied de page.
+
+Créer une page d’événement:
+
+1. Créez un fichier sous `src/pages/events/mon-evenement.tsx`.
+2. Utilisez les composants de `src/template/pages/Events.tsx`:
+
+```tsx
+import type { NextPage } from 'next';
+import { EventLayout, EventTitle, EventText, EventSchedule, type EventScheduleItem } from '../../template/pages/Events';
+
+const schedule: EventScheduleItem[] = [
+  { title: 'Talk 1', titleHref: '#', date: 'YYYY-MM-DD HH:mm', description: '...', location: 'Room A' },
+];
+
+const MonEvenement: NextPage = () => (
+  <EventLayout>
+    <EventTitle title="Mon Événement" logoSrc="/assets/images/Logo.svg" gradientFrom="from-indigo-600" gradientTo="to-cyan-600" />
+    <EventText header="À propos" body={<p>Description…</p>} />
+    <EventSchedule title="Horaire" items={schedule} />
+  </EventLayout>
+);
+
+export default MonEvenement;
+```
+
+Ajouter l’événement au menu déroulant de la Navbar:
+
+1. Ouvrez `src/template/Navbar.tsx`.
+2. Dans la liste `<ul>` du menu « Événements », ajoutez une entrée:
+
+```tsx
+<li className="px-4 py-2 hover:bg-gray-50">
+  <Link href="/events/mon-evenement">Mon Événement</Link>
+</li>
+```
+
+Retirer complètement une entrée du menu:
+
+- Supprimez le `<li>` correspondant dans `Navbar.tsx`.
+- Optionnel: supprimez la page sous `src/pages/events/...` si l’événement est définitivement retiré.
 
 ## Déploiement
 

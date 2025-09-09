@@ -6,6 +6,7 @@ import { FooterLinks } from '../footer/FooterLinks';
 import { FooterTwoRowsCopyright } from '../footer/FooterTwoRowsCopyright';
 import { Section } from '../layout/Section';
 import { AppConfig } from '../utils/AppConfig';
+import { SocialLinks } from '../utils/SocialLinks';
 import { Logo } from './Logo';
 
 const Footer = () => (
@@ -19,7 +20,6 @@ const Footer = () => (
               description={AppConfig.description}
             />
           </div>
-
           <FooterLinks title="Ressources">
             <li>
               <Link
@@ -30,17 +30,7 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link target="_blank" href="https://codebook.xanadu.ai/">
-                Xanadu Codebook
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href="https://quantumalgorithmzoo.org/">
-                Q-Algorithm Zoo
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href="https://github.com/QuantumETS">
+              <Link target="_blank" href={SocialLinks.github}>
                 Github
               </Link>
             </li>
@@ -50,6 +40,14 @@ const Footer = () => (
               <Link href="https://www.etsmtl.ca/">
                 École de technologie supérieure
               </Link>
+            </li>
+          </FooterLinks>
+          <FooterLinks title="Contact">
+            <li>
+              <Link href={SocialLinks.email}>Email</Link>
+            </li>
+            <li>
+              <Link href={SocialLinks.discord}>Discord</Link>
             </li>
           </FooterLinks>
         </div>
