@@ -43,13 +43,53 @@ export const EventTitle = ({
 
 type EventTextProps = {
   header: string;
+  header_color?: string; // tailwind color e.g., text-purple-500
   body: string | JSX.Element;
+  // Optional illustrative image displayed alongside the text
+  imageSrc?: string;
+  imageAlt?: string;
+  // Controls where the text gets condensed relative to the image
+  // left: image on the left, text on the right (default)
+  // right: image on the right, text on the left
+  imagePosition?: 'left' | 'right';
 };
 
-export const EventText = ({ header, body }: EventTextProps) => (
+export const EventText = ({
+  header,
+  header_color,
+  body,
+  imageSrc,
+  imageAlt = 'Event illustration',
+  imagePosition = 'left',
+}: EventTextProps) => (
   <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-    <h2 className="mb-3 text-2xl font-semibold text-gray-900">{header}</h2>
-    <div className="prose max-w-none text-gray-700">{body}</div>
+    {imageSrc ? (
+      <div
+        className={`flex flex-col items-start gap-6 sm:items-stretch sm:gap-8 ${
+          imagePosition === 'right' ? 'sm:flex-row-reverse' : 'sm:flex-row'
+        }`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className="rounded-sm sm:max-h-40 sm:max-w-sm"
+        />
+        <div className="flex-1">
+          <h2 className={`mb-3 text-2xl font-semibold ${header_color}`}>
+            {header}
+          </h2>
+          <div className="prose max-w-none text-gray-700">{body}</div>
+        </div>
+      </div>
+    ) : (
+      <>
+        <h2 className={`mb-3 text-2xl font-semibold ${header_color}`}>
+          {header}
+        </h2>
+        <div className="prose max-w-none text-gray-700">{body}</div>
+      </>
+    )}
   </section>
 );
 
@@ -92,7 +132,13 @@ export const EventSchedule = ({ title, items }: EventScheduleProps) => (
             <tr key={idx} className="hover:bg-gray-50">
               <td className="px-4 py-3 text-primary-600">
                 {it.titleHref ? (
-                  <Link href={it.titleHref}>{it.title}</Link>
+                  <Link
+                    href={it.titleHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {it.title}
+                  </Link>
                 ) : (
                   it.title
                 )}
