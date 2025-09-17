@@ -3,6 +3,7 @@ import { AppConfig } from '../../utils/AppConfig';
 import { Activites } from '../Activites';
 import { Banner } from '../Banner';
 import { Customer } from '../Customer';
+import { EventBanner } from '../EventBanner';
 // import { Pricing } from './Pricing';
 // import { Testimonial } from './Testimonial';
 import { Events } from '../Events';
@@ -15,6 +16,7 @@ import { Members } from '../Testimonial';
 const Accueil = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <EventBanner />
     <Navbar selectedTitle="Accueil" />
     <Hero />
     <Customer />
