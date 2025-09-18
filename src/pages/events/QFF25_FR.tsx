@@ -37,10 +37,10 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Journée de conférences - Inscriptions bientôt ouvertes !',
-    date: 'Mi-novembre - Date exacte à confirmer',
+    date: '14 novembre 2025, 8:30 - 17:00',
     description:
       "Une journée d'exposés inspirants d'experts de l'industrie, de chercheurs et de leaders communautaires, avec réseautage et panels. Détails à venir.",
-    location: 'À déterminer',
+    location: 'École de technologie supérieure - Salle A-1600',
   },
 ];
 
