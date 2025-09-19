@@ -116,7 +116,11 @@ const QFF25_FR: NextPage = () => (
       imageAlt="Illustration représentant 100 ans d'innovation quantique"
       imagePosition="right"
     />
-    <EventSchedule title="Programme et inscriptions" items={schedule} />
+    <EventSchedule
+      title="Programme et inscriptions"
+      items={schedule}
+      buttonText="S'inscrire"
+    />
     <EventFAQ
       items={[
         {
