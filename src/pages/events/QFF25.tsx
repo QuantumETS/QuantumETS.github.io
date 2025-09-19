@@ -116,7 +116,11 @@ const EventOne: NextPage = () => (
       imageAlt="Illustration representing 100 years of quantum innovation"
       imagePosition="right"
     />
-    <EventSchedule title="Schedule and Registration" items={schedule} />
+    <EventSchedule
+      title="Schedule and Registration"
+      items={schedule}
+      buttonText="Register"
+    />
     <EventFAQ
       items={[
         {

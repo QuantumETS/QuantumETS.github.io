@@ -51,7 +51,7 @@ const EventExample: NextPage = () => (
       header="Details"
       body={<p>Location, logistics, and participation info go here.</p>}
     />
-    <EventSchedule title="Agenda" items={schedule} />
+    <EventSchedule title="Agenda" items={schedule} buttonText="Register" />
   </EventLayout>
 );
 
