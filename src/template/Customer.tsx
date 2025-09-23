@@ -7,14 +7,22 @@ const Customer = () => (
     <Section yPadding="py-8" title="Nos Partenaires">
       <div className="flex flex-wrap justify-center gap-6">
         <CustomerLogo
+          src="/assets/images/logo_lemnisket.png"
+          alt="Logo de Lemnisket"
+          tier="electron"
+          link="https://lemnisket.ca/"
+        />
+        <CustomerLogo
           src="/assets/images/AEETS-LOGO-Symbole-ORANGE-RGB-petit.svg"
-          alt="AÉÉTS partenaire proton"
-          className="h-32"
+          alt="Logo de l'AÉÉTS"
+          tier="electron"
+          link="https://www.aeets.com/"
         />
         <CustomerLogo
           src="/assets/images/Logo_ETS_SansTypo_FR.png"
-          alt="ÉTS partenaire proton"
-          className="h-32"
+          alt="Logo de l'ÉTS"
+          tier="electron"
+          link="https://www.etsmtl.ca/"
         />
       </div>
     </Section>
