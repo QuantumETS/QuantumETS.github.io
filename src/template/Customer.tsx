@@ -8,9 +8,9 @@ const Customer = () => (
       <div className="flex flex-wrap justify-center gap-6">
         <CustomerLogo
           src="/assets/images/logo_lemnisket.png"
-          alt="Logo de Lemnisket"
+          alt="Logo de PhysicsGraph"
           tier="electron"
-          link="https://lemnisket.ca/"
+          link="https://physicsgraph.com/"
         />
         <CustomerLogo
           src="/assets/images/AEETS-LOGO-Symbole-ORANGE-RGB-petit.svg"
