@@ -36,7 +36,6 @@ const CustomerLogo = (props: ICustomerLogoProps) => {
           className={`${props.className} ${classHeight}`}
         />
       </a>
-      <label>Partenaire {props.tier}</label>
     </div>
   );
 };
