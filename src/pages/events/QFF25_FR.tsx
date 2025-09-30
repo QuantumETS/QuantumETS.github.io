@@ -37,6 +37,7 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Journée de conférences - Inscriptions bientôt ouvertes !',
+    titleHref: 'https://www.eventbrite.ca/e/1716293513099?aff=oddtdtcreator',
     date: '14 novembre 2025, 8:30 - 17:00',
     description:
       "Une journée d'exposés inspirants d'experts de l'industrie, de chercheurs et de leaders communautaires, avec réseautage et panels. Détails à venir.",
