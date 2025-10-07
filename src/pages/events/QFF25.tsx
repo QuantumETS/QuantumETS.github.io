@@ -36,6 +36,7 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Conference Day - Registration Now Live!',
+    titleHref: 'https://www.eventbrite.ca/e/1716293513099?aff=oddtdtcreator',
     date: 'November 14th, 2025, 8:30 AM - 5:00 PM',
     description:
       'A day of inspiring talks from industry experts, researchers, and community leaders in quantum computing with networking opportunities and panel discussions. Stay tuned for the detailed agenda!',
