@@ -36,7 +36,7 @@ const schedule: EventScheduleItem[] = [
     location: 'École de technologie supérieure - Salle D-3018',
   },
   {
-    title: 'Journée de conférences - Inscriptions bientôt ouvertes !',
+    title: 'Journée de conférences - Inscriptions maintenant ouvertes !',
     titleHref: 'https://www.eventbrite.ca/e/1716293513099?aff=oddtdtcreator',
     date: '14 novembre 2025, 8:30 - 17:00',
     description:
