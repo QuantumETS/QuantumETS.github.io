@@ -148,7 +148,7 @@ const speakers: EventGuestItem[] = [
     imageSrc: '/assets/images/members/xavier_bergeron.png',
   },
   {
-    guestName: `D'autres conférenciers à venir !`,
+    guestName: `D'autres annonces à venir !`,
     imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
   },
 ];
@@ -230,8 +230,8 @@ const QFF25_FR: NextPage = () => (
       items={schedule}
       buttonText="S'inscrire"
     />
-    {/* Section des conférenciers */}
-    <EventGuests title="Nos conférenciers" items={speakers} />
+    {/* Section des conférencier·ère·s */}
+    <EventGuests title="Nos conférencier·ère·s" items={speakers} />
 
     <EventFAQ
       items={[
