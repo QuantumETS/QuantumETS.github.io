@@ -38,6 +38,12 @@ npm run dev
 
 Cela lancera le serveur de développement et vous pourrez accéder au site à l'adresse [http://localhost:3000](http://localhost:3000).
 
+## Déploiement
+
+Le déploiement du site est automatisé via GitHub Actions. Chaque fois qu'une modification est poussée sur la branche `main`, le site est reconstruit et déployé automatiquement en tant que site statique sur GitHub Pages.
+
+Si un déploiement échoue, celui-ci sera visible dans l'onglet [Actions](https://github.com/QuantumETS/QuantumETS.github.io/actions)
+
 ## Sections du site internet à maintenir
 
 Plusieurs sections du site demandent une attention particulière pour être maintenues à jour :
@@ -46,7 +52,7 @@ Plusieurs sections du site demandent une attention particulière pour être main
 - **Accueil-Compétitions** : Les informations sur les compétitions doivent être mises à jour pour refléter les résultats et les événements récents.
 - **Accueil-Commanditaires** : Les commanditaires du club doivent être mis à jour pour refléter les partenariats actuels. Les logos et les liens doivent être vérifiés pour s'assurer qu'ils sont corrects.
 - **Apprendre** : Cette section contient les ressources pédagogiques de niveau débutant développées par le club. Elle contient aussi des liens vers les présentations des ateliers et des conférences passées.
-- **Événements** : Les pages d’événements personnalisées (bannières, sections de texte, horaires) et le menu déroulant dans la barre de navigation.
+- **Événements** : Les pages d'événements personnalisées (bannières, sections de texte, horaires) et le menu déroulant dans la barre de navigation. Voir [docs/events-maintenance.md](docs/events-maintenance.md) pour la documentation complète.
 
 ### Accueil-Membres de l'équipe
 
@@ -150,57 +156,14 @@ Les ressources pédagogiques mises de l'avant comportent un bouton avec un lien 
 
 ### Événements
 
-Les pages d’événements utilisent des composants dédiés et un menu déroulant dans la barre de navigation.
+La gestion complète des pages d'événements est documentée dans [docs/events-maintenance.md](docs/events-maintenance.md).
 
-Composants disponibles (définis dans `src/template/pages/Events.tsx`):
+**Résumé rapide :**
 
-- `EventTitle`: bannière avec titre, logo optionnel et dégradé.
-- `EventText`: section « header + body » répétable.
-- `EventSchedule`: tableau avec colonnes Title (peut être un lien), Date, Description, Location.
-- `EventLayout`: gabarit qui inclut la barre de navigation et le pied de page.
+- **Créer une page** : Ajouter un fichier sous `src/pages/events/mon-evenement.tsx`
+- **Ajouter au menu** : Modifier le tableau `eventLinks` dans `src/template/Navbar.tsx`
+- **Composants disponibles** : `EventTitle`, `EventText`, `EventSchedule`, `EventGuests`, `EventFAQ`, `EventLayout`
 
-Créer une page d’événement:
+Consultez la [documentation complète](docs/events-maintenance.md) pour les détails d'utilisation de chaque composant et des exemples de code.
 
-1. Créez un fichier sous `src/pages/events/mon-evenement.tsx`.
-2. Utilisez les composants de `src/template/pages/Events.tsx`:
 
-```tsx
-import type { NextPage } from 'next';
-import { EventLayout, EventTitle, EventText, EventSchedule, type EventScheduleItem } from '../../template/pages/Events';
-
-const schedule: EventScheduleItem[] = [
-  { title: 'Talk 1', titleHref: '#', date: 'YYYY-MM-DD HH:mm', description: '...', location: 'Room A' },
-];
-
-const MonEvenement: NextPage = () => (
-  <EventLayout>
-    <EventTitle title="Mon Événement" logoSrc="/assets/images/Logo.svg" gradientFrom="from-indigo-600" gradientTo="to-cyan-600" />
-    <EventText header="À propos" body={<p>Description…</p>} />
-    <EventSchedule title="Horaire" items={schedule} />
-  </EventLayout>
-);
-
-export default MonEvenement;
-```
-
-Ajouter l’événement au menu déroulant de la Navbar:
-
-1. Ouvrez `src/template/Navbar.tsx`.
-2. Dans la liste `<ul>` du menu « Événements », ajoutez une entrée:
-
-```tsx
-<li className="px-4 py-2 hover:bg-gray-50">
-  <Link href="/events/mon-evenement">Mon Événement</Link>
-</li>
-```
-
-Retirer complètement une entrée du menu:
-
-- Supprimez le `<li>` correspondant dans `Navbar.tsx`.
-- Optionnel: supprimez la page sous `src/pages/events/...` si l’événement est définitivement retiré.
-
-## Déploiement
-
-Le déploiement du site est automatisé via GitHub Actions. Chaque fois qu'une modification est poussée sur la branche `main`, le site est reconstruit et déployé automatiquement en tant que site statique sur GitHub Pages.
-
-Si un déploiement échoue, celui-ci sera visible dans l'onglet [Actions](https://github.com/QuantumETS/QuantumETS.github.io/actions)
