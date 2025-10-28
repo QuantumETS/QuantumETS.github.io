@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
+import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
   EventFAQ,
+  EventGuests,
   EventLayout,
   EventSchedule,
   EventText,
@@ -13,7 +15,6 @@ import {
 const schedule: EventScheduleItem[] = [
   {
     title: "Atelier 1 : Introduction à l'informatique quantique",
-    titleHref: 'https://www.eventbrite.ca/e/1671892709099?aff=oddtdtcreator',
     date: '10 octobre 2025, 18:00 - 20:00',
     description:
       "Participez à l'atelier le plus populaire de QuantumÉTS ! Découvrez les bases de l'informatique quantique, de son histoire aux algorithmes modernes, grâce à des explications accessibles et des démonstrations de circuits en direct. Aucun prérequis en maths - la curiosité suffit !",
@@ -21,7 +22,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Atelier 2 : Bases de la programmation avec Qiskit',
-    titleHref: 'https://www.eventbrite.ca/e/1693030372419?aff=oddtdtcreator',
     date: '17 octobre 2025, 18:00 - 20:00',
     description:
       "Apprenez les bases du code pour machines quantiques : opérations à un et deux qubits et exécution d'algorithmes sur IBM Quantum. Une introduction pratique pour donner vie à vos premiers circuits quantiques.",
@@ -42,6 +42,114 @@ const schedule: EventScheduleItem[] = [
     description:
       "Une journée d'exposés inspirants d'experts de l'industrie, de chercheurs et de leaders communautaires, avec réseautage et panels. Détails à venir.",
     location: 'École de technologie supérieure - Salle A-1600',
+  },
+];
+
+const speakers: EventGuestItem[] = [
+  {
+    guestName: 'Gilles Brassard, Université de Montréal',
+    guestTalk: (
+      <ul>
+        <li>Conférencier - Journée de conférences</li>
+        <li>
+          Présentation : <i>À déterminer</i>
+        </li>
+      </ul>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/brassard.png',
+  },
+  {
+    guestName: 'Jacob Biamonte, École de technologie supérieure',
+    guestTalk: (
+      <ul>
+        <li>Conférencier - Journée de conférences</li>
+        <li>
+          Présentation : <i>À déterminer</i>
+        </li>
+      </ul>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/biamonte.png',
+  },
+  {
+    guestName: `D'autres conférenciers à venir !`,
+    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
+  },
+  {
+    guestName: 'Victor Drouin-Touchette, Université de Sherbrooke / Pasqal',
+    guestTalk: (
+      <ul>
+        <li>Conférencier - Journée de conférences</li>
+        <li>Présentation : Relier la physique et l&apos;optimisation</li>
+      </ul>
+    ),
+    body: (
+      <>
+        <p>
+          En physique, la recherche de l&apos;état fondamental d&apos;un
+          Hamiltonien est analogue à la résolution d&apos;un problème
+          d&apos;optimisation. Cette présentation met en lumière ce parallèle,
+          en expliquant comment les contraintes deviennent des interactions et
+          les solutions des minima énergétiques. Nous verrons ensuite comment
+          l&apos;ingénierie de l&apos;Hamiltonien et de son contrôle quantique
+          permet d&apos;explorer efficacement des paysages énergétiques
+          complexes. En conclusion, nous discuterons de la manière dont les
+          ordinateurs quantiques à atomes neutres exploitent ces principes pour
+          manipuler l&apos;information à l&apos;échelle atomique.
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/drouin-touchette.png',
+  },
+  {
+    guestName: 'Simon Verret, AlgoLab',
+    guestTalk: (
+      <ul>
+        <li>Conférencier - Journée de conférences</li>
+        <li>
+          Présentation : Calculer la fonction de Green pour réduire
+          l&apos;erreur sur la valeur moyenne d&apos;énergie
+        </li>
+      </ul>
+    ),
+    body: (
+      <>
+        <p>
+          Une application clé pour l&apos;avenir de l&apos;informatique
+          quantique consiste à préparer et à mesurer l&apos;état fondamental des
+          systèmes physiques. Cependant, les méthodes proposées jusqu&apos;à
+          présent posent des problèmes : les algorithmes variationnels se
+          heurtent à des « plateaux stériles », les méthodes de Krylov souffrent
+          du bruit statistique et la plupart des autres méthodes nécessitent la
+          correction d&apos;erreurs. Or, l&apos;Algolab vient de développer un
+          algorithme pour calculer la fonction de Green, qui semble pouvoir
+          améliorer l&apos;estimation de l&apos;énergie d&apos;états
+          fondamentaux imparfaits. Je présenterai des résultats obtenus avec
+          l&apos;ordinateur quantique d&apos;IBM et des simulations de cette
+          méthode.
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/verret.png',
+  },
+  {
+    guestName: 'Samuel Richard',
+    guestTalk: (
+      <ul>
+        <li>Atelier 1 : Introduction à l&apos;informatique quantique</li>
+        <li>Atelier 2 : Bases de la programmation avec Qiskit</li>
+        <li>Atelier 3 : Représentation mathématique des qubits</li>
+      </ul>
+    ),
+    imageSrc: '/assets/images/members/samuel_richard.jpg',
+  },
+  {
+    guestName: 'Xavier Bergeron',
+    guestTalk: (
+      <ul>
+        <li>Atelier 2 : Bases de la programmation avec Qiskit</li>
+      </ul>
+    ),
+    imageSrc: '/assets/images/members/xavier_bergeron.png',
   },
 ];
 
@@ -122,6 +230,9 @@ const QFF25_FR: NextPage = () => (
       items={schedule}
       buttonText="S'inscrire"
     />
+    {/* Section des conférenciers */}
+    <EventGuests title="Nos conférenciers" items={speakers} />
+
     <EventFAQ
       items={[
         {

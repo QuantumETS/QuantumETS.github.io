@@ -146,7 +146,14 @@ export const EventSchedule = ({
                     {buttonText}
                   </a>
                 ) : (
-                  <span className="text-xs text-gray-300">—</span>
+                  <button
+                    type="button"
+                    disabled
+                    className="inline-flex cursor-not-allowed items-center rounded bg-gray-300 px-3 py-1 text-xs font-medium text-gray-700 shadow-sm"
+                    aria-disabled="true"
+                  >
+                    {buttonText}
+                  </button>
                 )}
               </td>
               <td className="px-4 py-3 text-primary-600">{it.title}</td>
@@ -233,6 +240,61 @@ export const EventFAQ = ({ title = 'FAQ', items }: EventFAQProps) => {
       <div className="divide-y divide-gray-200 overflow-hidden rounded border border-gray-200 bg-white">
         {items.map((item, idx) => (
           <FAQItemRow key={idx} item={item} index={idx} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export type EventGuestItem = {
+  guestName: string;
+  guestTalk?: string | JSX.Element;
+  body?: string | JSX.Element;
+  imageSrc?: string;
+};
+
+type EventGuestsProps = {
+  title?: string;
+  items: EventGuestItem[];
+};
+
+const GuestCard: React.FC<{ guest: EventGuestItem }> = ({ guest }) => (
+  <div className="flex gap-4">
+    {guest.imageSrc && (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={guest.imageSrc}
+        alt={`${guest.guestName} profile`}
+        className="h-48 w-48 shrink-0 rounded-full object-cover shadow-lg"
+      />
+    )}
+    <div className="min-w-0 flex-1">
+      <h3 className="text-xl font-semibold text-gray-900">{guest.guestName}</h3>
+      {guest.guestTalk && (
+        <p className="text-m mb-2 font-medium text-purple-600">
+          {guest.guestTalk}
+        </p>
+      )}
+      {guest.body && (
+        <div className="text-m max-w-none text-gray-700">{guest.body}</div>
+      )}
+    </div>
+  </div>
+);
+
+export const EventGuests = ({ title = 'Guests', items }: EventGuestsProps) => {
+  return (
+    <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <h2 className="mb-8 text-center text-2xl font-semibold text-gray-900">
+        {title}
+      </h2>
+      <hr
+        className="mx-auto -mt-4 mb-8 h-px w-36 border-0 bg-purple-200"
+        aria-hidden="true"
+      />
+      <div className="grid gap-8">
+        {items.map((guest, idx) => (
+          <GuestCard key={idx} guest={guest} />
         ))}
       </div>
     </section>
