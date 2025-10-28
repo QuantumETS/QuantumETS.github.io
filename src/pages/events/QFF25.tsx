@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
+import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
   EventFAQ,
+  EventGuests,
   EventLayout,
   EventSchedule,
   EventText,
@@ -13,7 +15,6 @@ import {
 const schedule: EventScheduleItem[] = [
   {
     title: 'Workshop 1 : Introduction to Quantum Computing',
-    titleHref: 'https://www.eventbrite.ca/e/1671892709099?aff=oddtdtcreator',
     date: 'October 10th, 2025, 18:00 - 20:00',
     description:
       'Join QuantumÉTS’ most popular workshop! Learn the fundamentals of quantum computing, from the history of quantum to the modern algorithms, through accessible explanations and live circuit demos. No math required, just curiosity!',
@@ -21,7 +22,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Workshop 2 : Basics of Programming Qiskit',
-    titleHref: 'https://www.eventbrite.ca/e/1693030372419?aff=oddtdtcreator',
     date: 'October 17th, 2025, 18:00 - 20:00',
     description:
       'Learn the basics of coding for quantum machines, from one- and two-qubit operations to running algorithms on IBM Quantum. A hands-on introduction to bring your first quantum circuits to life!',
@@ -41,6 +41,109 @@ const schedule: EventScheduleItem[] = [
     description:
       'A day of inspiring talks from industry experts, researchers, and community leaders in quantum computing with networking opportunities and panel discussions. Stay tuned for the detailed agenda!',
     location: 'École de Technologie Supérieure - Room A-1600',
+  },
+];
+
+const speakers: EventGuestItem[] = [
+  {
+    guestName: 'Gilles Brassard',
+    guestTalk: (
+      <ul>
+        <li>Conference Day Speaker</li>
+        <li>
+          Talk: <i>TBA</i>
+        </li>
+      </ul>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/brassard.png',
+  },
+  {
+    guestName: 'Jacob Biamonte, École de technologie supérieure',
+    guestTalk: (
+      <ul>
+        <li>Conference Day Speaker</li>
+        <li>
+          Talk: <i>TBA</i>
+        </li>
+      </ul>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/biamonte.png',
+  },
+  {
+    guestName: 'Victor Drouin-Touchette, Université de Sherbrooke / Pasqal',
+    guestTalk: (
+      <ul>
+        <li>Conference Day Speaker</li>
+        <li>Talk: Bridging Physics and Optimization</li>
+      </ul>
+    ),
+    body: (
+      <>
+        <p>
+          In physics, finding the ground state of a Hamiltonian is analogous to
+          solving an optimization problem. This presentation highlights that
+          parallel by explaining how constraints translate into interactions and
+          how solutions correspond to energy minima. We will then explore how
+          Hamiltonian engineering and quantum control enable the efficient
+          exploration of complex energy landscapes. Finally, we will discuss how
+          neutral-atom quantum computers leverage these principles to manipulate
+          information at the atomic scale.
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/drouin-touchette.png',
+  },
+  {
+    guestName: 'Simon Verret, AlgoLab',
+    guestTalk: (
+      <ul>
+        <li>Conference Day Speaker</li>
+        <li>
+          Talk: Computing the Green&apos;s Function to Reduce Error on the
+          Energy Expectation Value
+        </li>
+      </ul>
+    ),
+    body: (
+      <>
+        <p>
+          A key near-term application of quantum computing is to prepare and
+          measure the ground state of physical systems. However, current
+          approaches face limitations: variational algorithms encounter
+          so-called barren plateaus, Krylov methods suffer from statistical
+          noise, and most other techniques require error correction. Recently,
+          Algolab developed an algorithm to compute the Green&apos;s function
+          that appears to improve the energy-expectation estimate of imperfect
+          ground states. I will present results obtained on IBM&apos;s quantum
+          computer as well as simulations of this method.
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/verret.png',
+  },
+  {
+    guestName: 'Samuel Richard',
+    guestTalk: (
+      <ul>
+        <li>Workshop 1: Introduction to Quantum Computing</li>
+        <li>Workshop 2: Basics of Programming Qiskit</li>
+        <li>Workshop 3: Mathematical Representation of Qubits</li>
+      </ul>
+    ),
+    imageSrc: '/assets/images/members/samuel_richard.jpg',
+  },
+  {
+    guestName: 'Xavier Bergeron',
+    guestTalk: (
+      <ul>
+        <li>Workshop 2: Basics of Programming Qiskit</li>
+      </ul>
+    ),
+    imageSrc: '/assets/images/members/xavier_bergeron.png',
+  },
+  {
+    guestName: 'More to be announced soon!',
+    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
   },
 ];
 
@@ -122,6 +225,9 @@ const EventOne: NextPage = () => (
       items={schedule}
       buttonText="Register"
     />
+    {/* Add speaker section */}
+    <EventGuests title="Featured Speakers" items={speakers} />
+
     <EventFAQ
       items={[
         {
