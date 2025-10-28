@@ -71,10 +71,6 @@ const speakers: EventGuestItem[] = [
     imageSrc: '/assets/QiskitFallFest25/speakers/biamonte.png',
   },
   {
-    guestName: `D'autres conférenciers à venir !`,
-    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
-  },
-  {
     guestName: 'Victor Drouin-Touchette, Université de Sherbrooke / Pasqal',
     guestTalk: (
       <ul>
@@ -150,6 +146,10 @@ const speakers: EventGuestItem[] = [
       </ul>
     ),
     imageSrc: '/assets/images/members/xavier_bergeron.png',
+  },
+  {
+    guestName: `D'autres conférenciers à venir !`,
+    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
   },
 ];
 
