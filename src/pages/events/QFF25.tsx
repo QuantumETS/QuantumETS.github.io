@@ -50,12 +50,34 @@ const speakers: EventGuestItem[] = [
     guestTalk: (
       <ul>
         <li>Conference Day Speaker</li>
-        <li>
-          Talk: <i>TBA</i>
-        </li>
+        <li>Talk: Who Told You That Nature Is Nonlocal?</li>
       </ul>
     ),
-    imageSrc: '/assets/QiskitFallFest25/speakers/brassard.png',
+    body: (
+      <>
+        <p>
+          One of the most surprising aspects of quantum theory is that it gives
+          us the impression we live in a nonlocal universe. This means that
+          events occurring at one point in the universe seem to have an
+          instantaneous effect on another point arbitrarily far away. This idea
+          so disturbed Einstein that he famously called it “spooky action at a
+          distance.” And yet, the Nobel Prize in Physics was awarded in 2022 for
+          the experimental demonstration of this phenomenon, achieved half a
+          century earlier. But what do those laureates say? In his recent book
+          “If Einstein Had Known?”, Aspect writes that he accepts “the idea […]
+          of an interaction capable of instantaneously affecting a quantum state
+          at a distance.” And yet, no experiment designed to confirm the
+          predictions of quantum theory can serve as evidence in favor of
+          nonlocality. Indeed, any reversible theory of physics that forbids
+          instantaneous communication (for example, unitary quantum theory) can
+          still be explained within a local and realistic universe—provided we
+          use Einstein&apos;s 1949 definition of locality, rather than John
+          Bell&apos;s 1964 version. When viewed from the right perspective, good
+          old Einstein was right once again!
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/brassard_2.jpg',
   },
   {
     guestName: 'Jacob Biamonte, École de technologie supérieure',

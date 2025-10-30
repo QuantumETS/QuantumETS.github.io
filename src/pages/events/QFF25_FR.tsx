@@ -51,12 +51,37 @@ const speakers: EventGuestItem[] = [
     guestTalk: (
       <ul>
         <li>Conférencier - Journée de conférences</li>
-        <li>
-          Présentation : <i>À déterminer</i>
-        </li>
+        <li>Présentation : Qui vous a dit que la Nature est nonlocale ?</li>
       </ul>
     ),
-    imageSrc: '/assets/QiskitFallFest25/speakers/brassard.png',
+    body: (
+      <>
+        <p>
+          L&apos;un des aspects les plus surprenants de la théorie quantique est
+          qu&apos;elle nous donne l&apos;impression que nous vivons dans un
+          univers nonlocal. Ceci veut dire que des événements qui se passent en
+          un point de l&apos;univers semblent avoir un effet instantané sur un
+          point arbitrairement éloigné. Cette idée révoltait tant Einstein
+          qu&apos;il l&apos;a qualifiée d&apos;action fantomatique à distance.
+          Et pourtant, le Prix Nobel de physique a été attribué en 2022 pour la
+          démonstration expérimentale de ce phénomène réalisée un demi-siècle
+          auparavant. Qu&apos;en disent ces lauréats ? Dans son récent livre «
+          Si Einstein avait su ? », Aspect affirme accepter « l&apos;idée […]
+          d&apos;une interaction capable d&apos;affecter l&apos;état quantique à
+          distance de façon instantanée ». Et pourtant, aucune expérience dont
+          le but est de confirmer les prédictions de la théorie quantique ne
+          peut être utilisée comme argument en faveur de la nonlocalité. En
+          effet, toute théorie réversible de la physique qui ne permet pas la
+          possibilité de communication instantanée (par exemple la théorie
+          quantique unitaire) peut s&apos;expliquer dans un univers local et
+          réaliste pour autant que l&apos;on adopte la définition de localité
+          donnée par Einstein en 1949 (et non pas celle donnée par John Bell en
+          1964). Lorsqu&apos;on y pense de la bonne façon, ce bon vieux Einstein
+          avait raison une fois de plus !
+        </p>
+      </>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/brassard_2.jpg',
   },
   {
     guestName: 'Jacob Biamonte, École de technologie supérieure',
