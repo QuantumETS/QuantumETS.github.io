@@ -10,6 +10,7 @@ import {
   EventSchedule,
   EventText,
   EventTitle,
+  StrikeInfoBanner,
 } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
@@ -32,7 +33,8 @@ const schedule: EventScheduleItem[] = [
     titleHref: 'https://www.eventbrite.ca/e/1693056340089?aff=oddtdtcreator',
     date: 'November 7th, 2025, 18:00 - 20:00',
     description: `Join us for an exploration of the mathematical concepts underlying qubits, revisiting the Bloch Sphere, vector spaces, Dirac notation, and more. This workshop will provide the foundation needed to understand quantum algorithms and their implementation in Qiskit. Suitable for those with a grasp of basic linear algebra.`,
-    location: 'École de Technologie Supérieure - Room D-3018',
+    location:
+      'Moved to an online format - link will be sent with the Eventbrite confirmation',
   },
   {
     title: 'Conference Day - Registration Now Live!',
@@ -171,6 +173,36 @@ const speakers: EventGuestItem[] = [
 
 const EventOne: NextPage = () => (
   <EventLayout>
+    <StrikeInfoBanner
+      title="STM Strike Information"
+      content={
+        <div>
+          <p className="mb-4">
+            <strong>Important Notice:</strong> Due to the ongoing STM (Société
+            de transport de Montréal) strike, public transportation services may
+            be significantly affected.
+          </p>
+          <h4 className="mb-2 font-semibold">Affected Activities:</h4>
+          <ul className="mb-4 list-disc space-y-1 pl-6">
+            <li>
+              Workshop 3: The workshop has been moved online and will only be
+              given in person if the strike is lifted beforehand.
+            </li>
+            <li>Conference Day: No changes for now.</li>
+          </ul>
+          <p className="text-sm text-gray-600">
+            We recommend checking the latest{' '}
+            <a
+              href="https://www.stm.info/en/info/service-updates/info-strike"
+              className="font-bold text-indigo-600 hover:underline"
+            >
+              STM updates
+            </a>{' '}
+            before traveling to the event.
+          </p>
+        </div>
+      }
+    />
     <EventTitle
       title="Qiskit Fall Fest 2025"
       logoSrc="/assets/QiskitFallFest25/Badge/Badge.png"
