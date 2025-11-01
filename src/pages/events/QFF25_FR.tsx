@@ -10,6 +10,7 @@ import {
   EventSchedule,
   EventText,
   EventTitle,
+  StrikeInfoBanner,
 } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
@@ -33,7 +34,8 @@ const schedule: EventScheduleItem[] = [
     date: '7 novembre 2025, 18:00 - 20:00',
     description:
       'Explorez les concepts mathématiques sous-jacents aux qubits : sphère de Bloch, espaces vectoriels, notation de Dirac et plus. Idéal si vous maîtrisez les bases de l’algèbre linéaire.',
-    location: 'École de technologie supérieure - Salle D-3018',
+    location:
+      'Déplacé à un format en ligne - le lien sera envoyé avec la confirmation Eventbrite',
   },
   {
     title: 'Journée de conférences - Inscriptions maintenant ouvertes !',
@@ -180,6 +182,36 @@ const speakers: EventGuestItem[] = [
 
 const QFF25_FR: NextPage = () => (
   <EventLayout>
+    <StrikeInfoBanner
+      title="Information grève STM"
+      content={
+        <div>
+          <p className="mb-4">
+            <strong>Avis important :</strong> En raison de la grève en cours de
+            la STM (Société de transport de Montréal), les services de transport
+            public peuvent être considérablement affectés.
+          </p>
+          <h4 className="mb-2 font-semibold">Activités affectées :</h4>
+          <ul className="mb-4 list-disc space-y-1 pl-6">
+            <li>
+              Atelier 3 : L&apos;atelier est déplacé en ligne, il ne sera donné
+              en personne que si la grève est levée avant.
+            </li>
+            <li>Journée de conférences : Aucun changement pour le moment.</li>
+          </ul>
+          <p className="text-sm text-gray-600">
+            Nous recommandons de vérifier les dernières{' '}
+            <a
+              href="https://www.stm.info/fr/infos/etat-du-service/info-greve"
+              className="font-bold text-indigo-600 hover:underline"
+            >
+              mises à jour de la STM
+            </a>{' '}
+            avant de vous rendre à l&apos;événement.
+          </p>
+        </div>
+      }
+    />
     <EventTitle
       title="Qiskit Fall Fest 2025"
       logoSrc="/assets/QiskitFallFest25/Badge/Badge.png"
