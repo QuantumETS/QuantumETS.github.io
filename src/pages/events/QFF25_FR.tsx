@@ -124,6 +124,16 @@ const speakers: EventGuestItem[] = [
     imageSrc: '/assets/QiskitFallFest25/speakers/drouin-touchette.png',
   },
   {
+    guestName: 'Nathan Wiebe, University of Toronto',
+    guestTalk: (
+      <ul>
+        <li>Conférencier - Journée de conférences</li>
+        <li>Présentation : À déterminer</li>
+      </ul>
+    ),
+    imageSrc: '/assets/QiskitFallFest25/speakers/wiebe.jpg',
+  },
+  {
     guestName: 'Simon Verret, AlgoLab',
     guestTalk: (
       <ul>
