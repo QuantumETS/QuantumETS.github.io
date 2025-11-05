@@ -307,7 +307,7 @@ const EventOne: NextPage = () => (
         {
           question: 'Language / Langue',
           answer:
-            'Our event will be conducted in French, offering a unique opportunity for French-speaking enthusiasts to engage with quantum computing content in their native language.',
+            "Our event will be conducted in French mostly, with some keynotes given in English, depending on the speaker's preference.",
         },
       ]}
     />
