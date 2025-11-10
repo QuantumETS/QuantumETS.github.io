@@ -30,7 +30,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Atelier 3 : Représentation mathématique des qubits',
-    titleHref: 'https://www.eventbrite.ca/e/1693056340089?aff=oddtdtcreator',
     date: '7 novembre 2025, 18:00 - 20:00',
     description:
       'Explorez les concepts mathématiques sous-jacents aux qubits : sphère de Bloch, espaces vectoriels, notation de Dirac et plus. Idéal si vous maîtrisez les bases de l’algèbre linéaire.',
