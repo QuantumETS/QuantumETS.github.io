@@ -197,27 +197,18 @@ const QFF25_FR: NextPage = () => (
       content={
         <div>
           <p className="mb-4">
-            <strong>Avis important :</strong> En raison de la grève en cours de
-            la STM (Société de transport de Montréal), les services de transport
-            public peuvent être considérablement affectés.
+            <strong>Mise à jour (12 novembre 2025) :</strong> La grève de la STM
+            est suspendue. Toutes nos activités se déroulent comme prévu.
           </p>
-          <h4 className="mb-2 font-semibold">Activités affectées :</h4>
-          <ul className="mb-4 list-disc space-y-1 pl-6">
-            <li>
-              Atelier 3 : L&apos;atelier est déplacé en ligne, il ne sera donné
-              en personne que si la grève est levée avant.
-            </li>
-            <li>Journée de conférences : Aucun changement pour le moment.</li>
-          </ul>
           <p className="text-sm text-gray-600">
-            Nous recommandons de vérifier les dernières{' '}
+            Pour toute nouvelle évolution, veuillez consulter les{' '}
             <a
               href="https://www.stm.info/fr/infos/etat-du-service/info-greve"
               className="font-bold text-indigo-600 hover:underline"
             >
               mises à jour de la STM
-            </a>{' '}
-            avant de vous rendre à l&apos;événement.
+            </a>
+            .
           </p>
         </div>
       }

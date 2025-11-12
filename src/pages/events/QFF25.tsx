@@ -188,27 +188,18 @@ const EventOne: NextPage = () => (
       content={
         <div>
           <p className="mb-4">
-            <strong>Important Notice:</strong> Due to the ongoing STM (Société
-            de transport de Montréal) strike, public transportation services may
-            be significantly affected.
+            <strong>Update (November 12, 2025):</strong> The STM strike is
+            suspended. All our activities are proceeding as planned.
           </p>
-          <h4 className="mb-2 font-semibold">Affected Activities:</h4>
-          <ul className="mb-4 list-disc space-y-1 pl-6">
-            <li>
-              Workshop 3: The workshop has been moved online and will only be
-              given in person if the strike is lifted beforehand.
-            </li>
-            <li>Conference Day: No changes for now.</li>
-          </ul>
           <p className="text-sm text-gray-600">
-            We recommend checking the latest{' '}
+            For any new developments, please check the latest{' '}
             <a
               href="https://www.stm.info/en/info/service-updates/info-strike"
               className="font-bold text-indigo-600 hover:underline"
             >
               STM updates
-            </a>{' '}
-            before traveling to the event.
+            </a>
+            .
           </p>
         </div>
       }
