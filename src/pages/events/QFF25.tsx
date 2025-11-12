@@ -30,7 +30,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Workshop 3 : Mathematical Representation of Qubits',
-    titleHref: 'https://www.eventbrite.ca/e/1693056340089?aff=oddtdtcreator',
     date: 'November 7th, 2025, 18:00 - 20:00',
     description: `Join us for an exploration of the mathematical concepts underlying qubits, revisiting the Bloch Sphere, vector spaces, Dirac notation, and more. This workshop will provide the foundation needed to understand quantum algorithms and their implementation in Qiskit. Suitable for those with a grasp of basic linear algebra.`,
     location:
