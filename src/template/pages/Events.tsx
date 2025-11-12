@@ -314,7 +314,7 @@ export const StrikeInfoBanner = ({ title, content }: StrikeInfoBannerProps) => {
     <>
       {/* Banner */}
       <div
-        className="cursor-pointer bg-red-600 text-white transition-colors hover:bg-red-700"
+        className="cursor-pointer bg-green-600 text-white transition-colors hover:bg-green-700"
         onClick={() => setIsOpen(true)}
       >
         <div className="mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
