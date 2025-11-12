@@ -8,6 +8,7 @@ import {
   EventGuests,
   EventLayout,
   EventSchedule,
+  EventScheduleDownload,
   EventText,
   EventTitle,
   StrikeInfoBanner,
@@ -90,9 +91,40 @@ const speakers: EventGuestItem[] = [
       <ul>
         <li>Conférencier - Journée de conférences</li>
         <li>
-          Présentation : <i>À déterminer</i>
+          Présentation : Préparation variationnelle d&apos;états quantiques
         </li>
       </ul>
+    ),
+    body: (
+      <>
+        <p>
+          Un vaste effort de recherche international vise à exploiter les
+          processeurs quantiques à travers des boucles de rétroaction itératives
+          entre le monde quantique et classique. Dans cette présentation, je
+          présenterai nos découvertes concernant plusieurs limites fondamentales
+          de ce paradigme variationnel, ainsi que la manière dont ces
+          observations ont orienté nos travaux actuels sur la préparation
+          d&apos;états quantiques. Nous avons constaté que la structure des
+          instances de problème peut induire une sous-paramétrisation dans
+          l&apos;algorithme d&apos;optimisation quantique approché (QAOA),
+          entraînant des modes d&apos;échec systématiques et démontrant que de
+          nombreux premiers bancs d&apos;essai n&apos;étaient pas
+          statistiquement représentatifs des instances typiques. Nous avons
+          également mis en évidence des effets d&apos;avalanche dans
+          l&apos;entraînement de circuits quantiques, fournissant les premiers
+          contre-exemples à la conjecture de l&apos;entraînabilité par morceaux.
+          Du côté positif, nous avons identifié des phénomènes de concentration
+          des paramètres — les premières conditions suffisantes sous lesquelles
+          les paramètres optimisés deviennent indépendants des instances du
+          problème — et démontré que le modèle variationnel constitue, en
+          principe, un modèle universel de calcul quantique. En fin de compte,
+          toutes les approches variationnelles reposent sur une optimisation
+          externe visant à améliorer la capacité d&apos;un processeur quantique
+          à préparer des états précis. Je conclurai avec nos progrès récents en
+          vue d&apos;exploiter ces méthodes pour réaliser une préparation
+          directe d&apos;états quantiques.
+        </p>
+      </>
     ),
     imageSrc: '/assets/QiskitFallFest25/speakers/biamonte.png',
   },
@@ -286,6 +318,11 @@ const QFF25_FR: NextPage = () => (
       title="Programme et inscriptions"
       items={schedule}
       buttonText="S'inscrire"
+    />
+    <EventScheduleDownload
+      body="Vous pouvez télécharger le programme complet de la journée de conférences ici."
+      downloadUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
+      buttonLabel="Télécharger le programme"
     />
     {/* Section des conférencier·ère·s */}
     <EventGuests title="Nos conférencier·ère·s" items={speakers} />
