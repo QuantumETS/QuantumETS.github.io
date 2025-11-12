@@ -8,6 +8,7 @@ import {
   EventGuests,
   EventLayout,
   EventSchedule,
+  EventScheduleDownload,
   EventText,
   EventTitle,
   StrikeInfoBanner,
@@ -279,6 +280,12 @@ const EventOne: NextPage = () => (
       items={schedule}
       buttonText="Register"
     />
+    <EventScheduleDownload
+      body="You can download the full schedule of the Conference Day event here."
+      downloadUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
+      buttonLabel="Download Schedule"
+    />
+
     {/* Add speaker section */}
     <EventGuests title="Featured Speakers" items={speakers} />
 

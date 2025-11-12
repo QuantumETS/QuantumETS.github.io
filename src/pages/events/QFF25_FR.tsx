@@ -8,6 +8,7 @@ import {
   EventGuests,
   EventLayout,
   EventSchedule,
+  EventScheduleDownload,
   EventText,
   EventTitle,
   StrikeInfoBanner,
@@ -286,6 +287,11 @@ const QFF25_FR: NextPage = () => (
       title="Programme et inscriptions"
       items={schedule}
       buttonText="S'inscrire"
+    />
+    <EventScheduleDownload
+      body="Vous pouvez télécharger le programme complet de la journée de conférences ici."
+      downloadUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
+      buttonLabel="Télécharger le programme"
     />
     {/* Section des conférencier·ère·s */}
     <EventGuests title="Nos conférencier·ère·s" items={speakers} />
