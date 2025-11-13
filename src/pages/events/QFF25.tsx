@@ -52,30 +52,33 @@ const speakers: EventGuestItem[] = [
     guestTalk: (
       <ul>
         <li>Conference Day Speaker</li>
-        <li>Talk: Who Told You That Nature Is Nonlocal?</li>
+        <li>Talk: Qui vous a dit que la Nature est nonlocale ?</li>
       </ul>
     ),
     body: (
       <>
         <p>
-          One of the most surprising aspects of quantum theory is that it gives
-          us the impression we live in a nonlocal universe. This means that
-          events occurring at one point in the universe seem to have an
-          instantaneous effect on another point arbitrarily far away. This idea
-          so disturbed Einstein that he famously called it “spooky action at a
-          distance.” And yet, the Nobel Prize in Physics was awarded in 2022 for
-          the experimental demonstration of this phenomenon, achieved half a
-          century earlier. But what do those laureates say? In his recent book
-          “If Einstein Had Known?”, Aspect writes that he accepts “the idea […]
-          of an interaction capable of instantaneously affecting a quantum state
-          at a distance.” And yet, no experiment designed to confirm the
-          predictions of quantum theory can serve as evidence in favor of
-          nonlocality. Indeed, any reversible theory of physics that forbids
-          instantaneous communication (for example, unitary quantum theory) can
-          still be explained within a local and realistic universe—provided we
-          use Einstein&apos;s 1949 definition of locality, rather than John
-          Bell&apos;s 1964 version. When viewed from the right perspective, good
-          old Einstein was right once again!
+          L&apos;un des aspects les plus surprenants de la théorie quantique est
+          qu&apos;elle nous donne l&apos;impression que nous vivons dans un
+          univers nonlocal. Ceci veut dire que des événements qui se passent en
+          un point de l&apos;univers semblent avoir un effet instantané sur un
+          point arbitrairement éloigné. Cette idée révoltait tant Einstein
+          qu&apos;il l&apos;a qualifiée d&apos;action fantomatique à distance.
+          Et pourtant, le Prix Nobel de physique a été attribué en 2022 pour la
+          démonstration expérimentale de ce phénomène réalisée un demi-siècle
+          auparavant. Qu&apos;en disent ces lauréats ? Dans son récent livre «
+          Si Einstein avait su ? », Aspect affirme accepter « l&apos;idée […]
+          d&apos;une interaction capable d&apos;affecter l&apos;état quantique à
+          distance de façon instantanée ». Et pourtant, aucune expérience dont
+          le but est de confirmer les prédictions de la théorie quantique ne
+          peut être utilisée comme argument en faveur de la nonlocalité. En
+          effet, toute théorie réversible de la physique qui ne permet pas la
+          possibilité de communication instantanée (par exemple la théorie
+          quantique unitaire) peut s&apos;expliquer dans un univers local et
+          réaliste pour autant que l&apos;on adopte la définition de localité
+          donnée par Einstein en 1949 (et non pas celle donnée par John Bell en
+          1964). Lorsqu&apos;on y pense de la bonne façon, ce bon vieux Einstein
+          avait raison une fois de plus !
         </p>
       </>
     ),
@@ -121,20 +124,22 @@ const speakers: EventGuestItem[] = [
     guestTalk: (
       <ul>
         <li>Conference Day Speaker</li>
-        <li>Talk: Bridging Physics and Optimization</li>
+        <li>Talk: Relier la physique et l&apos;optimisation</li>
       </ul>
     ),
     body: (
       <>
         <p>
-          In physics, finding the ground state of a Hamiltonian is analogous to
-          solving an optimization problem. This presentation highlights that
-          parallel by explaining how constraints translate into interactions and
-          how solutions correspond to energy minima. We will then explore how
-          Hamiltonian engineering and quantum control enable the efficient
-          exploration of complex energy landscapes. Finally, we will discuss how
-          neutral-atom quantum computers leverage these principles to manipulate
-          information at the atomic scale.
+          En physique, la recherche de l&apos;état fondamental d&apos;un
+          Hamiltonien est analogue à la résolution d&apos;un problème
+          d&apos;optimisation. Cette présentation met en lumière ce parallèle,
+          en expliquant comment les contraintes deviennent des interactions et
+          les solutions des minima énergétiques. Nous verrons ensuite comment
+          l&apos;ingénierie de l&apos;Hamiltonien et de son contrôle quantique
+          permet d&apos;explorer efficacement des paysages énergétiques
+          complexes. En conclusion, nous discuterons de la manière dont les
+          ordinateurs quantiques à atomes neutres exploitent ces principes pour
+          manipuler l&apos;information à l&apos;échelle atomique.
         </p>
       </>
     ),
@@ -156,23 +161,26 @@ const speakers: EventGuestItem[] = [
       <ul>
         <li>Conference Day Speaker</li>
         <li>
-          Talk: Computing the Green&apos;s Function to Reduce Error on the
-          Energy Expectation Value
+          Talk: Calculer la fonction de Green pour réduire l&apos;erreur sur la
+          valeur moyenne d&apos;énergie
         </li>
       </ul>
     ),
     body: (
       <>
         <p>
-          A key near-term application of quantum computing is to prepare and
-          measure the ground state of physical systems. However, current
-          approaches face limitations: variational algorithms encounter
-          so-called barren plateaus, Krylov methods suffer from statistical
-          noise, and most other techniques require error correction. Recently,
-          Algolab developed an algorithm to compute the Green&apos;s function
-          that appears to improve the energy-expectation estimate of imperfect
-          ground states. I will present results obtained on IBM&apos;s quantum
-          computer as well as simulations of this method.
+          Une application clé pour l&apos;avenir de l&apos;informatique
+          quantique consiste à préparer et à mesurer l&apos;état fondamental des
+          systèmes physiques. Cependant, les méthodes proposées jusqu&apos;à
+          présent posent des problèmes : les algorithmes variationnels se
+          heurtent à des « plateaux stériles », les méthodes de Krylov souffrent
+          du bruit statistique et la plupart des autres méthodes nécessitent la
+          correction d&apos;erreurs. Or, l&apos;Algolab vient de développer un
+          algorithme pour calculer la fonction de Green, qui semble pouvoir
+          améliorer l&apos;estimation de l&apos;énergie d&apos;états
+          fondamentaux imparfaits. Je présenterai des résultats obtenus avec
+          l&apos;ordinateur quantique d&apos;IBM et des simulations de cette
+          méthode.
         </p>
       </>
     ),

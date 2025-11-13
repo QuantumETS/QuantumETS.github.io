@@ -90,39 +90,31 @@ const speakers: EventGuestItem[] = [
     guestTalk: (
       <ul>
         <li>Conférencier - Journée de conférences</li>
-        <li>
-          Présentation : Préparation variationnelle d&apos;états quantiques
-        </li>
+        <li>Présentation : Variational Quantum State Preparation</li>
       </ul>
     ),
     body: (
       <>
         <p>
-          Un vaste effort de recherche international vise à exploiter les
-          processeurs quantiques à travers des boucles de rétroaction itératives
-          entre le monde quantique et classique. Dans cette présentation, je
-          présenterai nos découvertes concernant plusieurs limites fondamentales
-          de ce paradigme variationnel, ainsi que la manière dont ces
-          observations ont orienté nos travaux actuels sur la préparation
-          d&apos;états quantiques. Nous avons constaté que la structure des
-          instances de problème peut induire une sous-paramétrisation dans
-          l&apos;algorithme d&apos;optimisation quantique approché (QAOA),
-          entraînant des modes d&apos;échec systématiques et démontrant que de
-          nombreux premiers bancs d&apos;essai n&apos;étaient pas
-          statistiquement représentatifs des instances typiques. Nous avons
-          également mis en évidence des effets d&apos;avalanche dans
-          l&apos;entraînement de circuits quantiques, fournissant les premiers
-          contre-exemples à la conjecture de l&apos;entraînabilité par morceaux.
-          Du côté positif, nous avons identifié des phénomènes de concentration
-          des paramètres — les premières conditions suffisantes sous lesquelles
-          les paramètres optimisés deviennent indépendants des instances du
-          problème — et démontré que le modèle variationnel constitue, en
-          principe, un modèle universel de calcul quantique. En fin de compte,
-          toutes les approches variationnelles reposent sur une optimisation
-          externe visant à améliorer la capacité d&apos;un processeur quantique
-          à préparer des états précis. Je conclurai avec nos progrès récents en
-          vue d&apos;exploiter ces méthodes pour réaliser une préparation
-          directe d&apos;états quantiques.
+          A global research effort is underway to operate quantum processors
+          through iterative quantum–classical feedback loops. In this talk, I
+          will present our discovery of several fundamental limitations of this
+          variational paradigm and how these insights have guided our current
+          work on quantum state preparation. We found that problem-instance
+          structure can induce under parameterization in the Quantum Approximate
+          Optimization Algorithm (QAOA), leading to systematic failure modes and
+          demonstrating that many early benchmarks were not statistically
+          representative of typical problem instances. We also uncovered
+          avalanche effects in quantum circuit training, providing the first
+          counterexamples to the piecewise trainability conjecture. On the
+          positive side, we identified parameter concentration phenomena—the
+          first sufficient conditions under which optimized circuit parameters
+          become independent of problem instances—and proved that the
+          variational model is, in principle, a universal model of quantum
+          computation. Ultimately, all variational approaches rely on outer-loop
+          optimization to enhance a quantum processor&apos;s ability to prepare
+          specific states. I will conclude with our recent progress toward
+          leveraging these methods to achieve direct quantum state preparation.
         </p>
       </>
     ),
