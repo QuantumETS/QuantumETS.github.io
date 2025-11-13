@@ -207,10 +207,6 @@ const speakers: EventGuestItem[] = [
     ),
     imageSrc: '/assets/images/members/xavier_bergeron.png',
   },
-  {
-    guestName: `D'autres annonces à venir !`,
-    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
-  },
 ];
 
 const QFF25_FR: NextPage = () => (
