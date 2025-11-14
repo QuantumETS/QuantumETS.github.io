@@ -4,11 +4,11 @@ import Link from 'next/link';
 import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
+  EventActionButton,
   EventFAQ,
   EventGuests,
   EventLayout,
   EventSchedule,
-  EventScheduleDownload,
   EventText,
   EventTitle,
   StrikeInfoBanner,
@@ -311,10 +311,18 @@ const EventOne: NextPage = () => (
       items={schedule}
       buttonText="Register"
     />
-    <EventScheduleDownload
+    <EventActionButton
       body="You can download the full schedule of the Conference Day event here."
-      downloadUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
+      actionUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
       buttonLabel="Download Schedule"
+      icon="download"
+    />
+
+    <EventActionButton
+      body="Good news ! The conference day can be attended online. You can join via this link:"
+      actionUrl="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQxZDhmNjMtZGMwMC00NGQ0LWJjZTQtZjU5NThkMDBlZDI1%40thread.v2/0?context=%7b%22Tid%22%3a%2270aae3b7-9f3b-484d-8f95-49e8fbb783c0%22%2c%22Oid%22%3a%223a29e50f-3ecd-4d01-9b5a-9fcf0fc9c437%22%7d"
+      buttonLabel="Join Online"
+      icon="link"
     />
 
     {/* Add speaker section */}
