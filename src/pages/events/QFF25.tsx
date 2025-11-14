@@ -206,10 +206,6 @@ const speakers: EventGuestItem[] = [
     ),
     imageSrc: '/assets/images/members/xavier_bergeron.png',
   },
-  {
-    guestName: 'More to be announced soon!',
-    imageSrc: '/assets/QiskitFallFest25/speakers/coming_soon.png',
-  },
 ];
 
 const EventOne: NextPage = () => (
