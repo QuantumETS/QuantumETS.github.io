@@ -4,18 +4,8 @@ import { TestimonialCard } from '../members/MemberCard';
 
 const Members = () => (
   <Background color="bg-gray-200">
-    <Section title="Membres de l'équipe">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-4">
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/felix_wilhelmy.jpg',
-            alt: 'Felix Wilhelmy',
-          }}
-          author={{
-            name: 'Felix Wilhelmy',
-            position: 'Président',
-          }}
-        />
+    <Section title="Exécutif de Quantum ÉTS">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-3">
         <TestimonialCard
           image={{
             src: '/assets/images/members/samuel_richard.jpg',
@@ -23,17 +13,37 @@ const Members = () => (
           }}
           author={{
             name: 'Samuel Richard',
-            position: 'Vice-président',
+            position: 'Président & Fondateur',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/charles_choupin.jpg',
-            alt: 'Charles Choupin',
+            src: '/assets/images/members/felix_wilhelmy.jpg',
+            alt: 'Felix Wilhelmy',
           }}
           author={{
-            name: 'Charles Choupin',
+            name: 'Felix Wilhelmy',
+            position: 'Vice-Président',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/victor_rochon.png',
+            alt: 'Victor Rochon',
+          }}
+          author={{
+            name: 'Victor Rochon',
             position: 'Trésorier',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/mohammad_el_mir.jpg',
+            alt: 'Mohammad El Mir',
+          }}
+          author={{
+            name: 'Mohammad El Mir',
+            position: 'VP Communications',
           }}
         />
         <TestimonialCard
@@ -43,7 +53,7 @@ const Members = () => (
           }}
           author={{
             name: 'Julien Cardinal',
-            position: 'VP formation',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
@@ -53,7 +63,7 @@ const Members = () => (
           }}
           author={{
             name: 'Guy-Philippe Nadon',
-            position: 'Administrateur',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
@@ -63,47 +73,37 @@ const Members = () => (
           }}
           author={{
             name: 'Gabriel Lemay',
-            position: 'Administrateur',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/simon_roy.png',
-            alt: 'Simon Roy',
+            src: '/assets/images/members/charles_choupin.jpg',
+            alt: 'Charles Choupin',
           }}
           author={{
-            name: 'Simon Roy',
-            position: 'Fondateur',
+            name: 'Charles Choupin',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Antoine Lemelin',
+            src: 'avatar2',
+            alt: 'Felix-Antoine Lavallée',
           }}
           author={{
-            name: 'Antoine Lemelin',
-            position: 'Membre',
+            name: 'Felix-Antoine Lavallée',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/avatar2.png',
-            alt: 'Félix Caron',
+            src: 'avatar3',
+            alt: 'Fadi Younes',
           }}
           author={{
-            name: 'Félix Caron',
-            position: 'Membre',
-          }}
-        />
-        <TestimonialCard
-          image={{
-            src: '/assets/images/members/xavier_bergeron.jpg',
-            alt: 'Xavier Bergeron',
-          }}
-          author={{
-            name: 'Xavier Bergeron',
-            position: 'Membre',
+            name: 'Fadi Younes',
+            position: 'Soutien administratif',
           }}
         />
       </div>
