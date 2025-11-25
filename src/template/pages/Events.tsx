@@ -145,16 +145,7 @@ export const EventSchedule = ({
                   >
                     {buttonText}
                   </a>
-                ) : (
-                  <button
-                    type="button"
-                    disabled
-                    className="inline-flex cursor-not-allowed items-center rounded bg-gray-300 px-3 py-1 text-xs font-medium text-gray-700 shadow-sm"
-                    aria-disabled="true"
-                  >
-                    {buttonText}
-                  </button>
-                )}
+                ) : null}
               </td>
               <td className="px-4 py-3 text-primary-600">{it.title}</td>
               <td className="px-4 py-3 text-gray-700">{it.date}</td>

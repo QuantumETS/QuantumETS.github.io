@@ -4,19 +4,18 @@ import Link from 'next/link';
 import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
-  EventActionButton,
   EventFAQ,
   EventGuests,
   EventLayout,
   EventSchedule,
   EventText,
   EventTitle,
-  StrikeInfoBanner,
 } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
   {
     title: 'Workshop 1 : Introduction to Quantum Computing',
+    titleHref: 'https://www.youtube.com/watch?v=FADoJ_gTgz4',
     date: 'October 10th, 2025, 18:00 - 20:00',
     description:
       'Join QuantumÉTS’ most popular workshop! Learn the fundamentals of quantum computing, from the history of quantum to the modern algorithms, through accessible explanations and live circuit demos. No math required, just curiosity!',
@@ -38,7 +37,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Conference Day - Registration Now Live!',
-    titleHref: 'https://www.eventbrite.ca/e/1716293513099?aff=oddtdtcreator',
     date: 'November 14th, 2025, 8:30 AM - 5:00 PM',
     description:
       'A day of inspiring talks from industry experts, researchers, and community leaders in quantum computing with networking opportunities and panel discussions. Stay tuned for the detailed agenda!',
@@ -146,16 +144,6 @@ const speakers: EventGuestItem[] = [
     imageSrc: '/assets/QiskitFallFest25/speakers/drouin-touchette.png',
   },
   {
-    guestName: 'Nathan Wiebe, University of Toronto',
-    guestTalk: (
-      <ul>
-        <li>Conference Day Speaker</li>
-        <li>Talk: TBA</li>
-      </ul>
-    ),
-    imageSrc: '/assets/QiskitFallFest25/speakers/wiebe.jpg',
-  },
-  {
     guestName: 'Simon Verret, AlgoLab',
     guestTalk: (
       <ul>
@@ -210,27 +198,6 @@ const speakers: EventGuestItem[] = [
 
 const EventOne: NextPage = () => (
   <EventLayout>
-    <StrikeInfoBanner
-      title="STM Strike Information"
-      content={
-        <div>
-          <p className="mb-4">
-            <strong>Update (November 12, 2025):</strong> The STM strike is
-            suspended. All our activities are proceeding as planned.
-          </p>
-          <p className="text-sm text-gray-600">
-            For any new developments, please check the latest{' '}
-            <a
-              href="https://www.stm.info/en/info/service-updates/info-strike"
-              className="font-bold text-indigo-600 hover:underline"
-            >
-              STM updates
-            </a>
-            .
-          </p>
-        </div>
-      }
-    />
     <EventTitle
       title="Qiskit Fall Fest 2025"
       logoSrc="/assets/QiskitFallFest25/Badge/Badge.png"
@@ -305,20 +272,7 @@ const EventOne: NextPage = () => (
     <EventSchedule
       title="Schedule and Registration"
       items={schedule}
-      buttonText="Register"
-    />
-    <EventActionButton
-      body="You can download the full schedule of the Conference Day event here."
-      actionUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
-      buttonLabel="Download Schedule"
-      icon="download"
-    />
-
-    <EventActionButton
-      body="Good news ! The conference day can be attended online. You can join via this link:"
-      actionUrl="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQxZDhmNjMtZGMwMC00NGQ0LWJjZTQtZjU5NThkMDBlZDI1%40thread.v2/0?context=%7b%22Tid%22%3a%2270aae3b7-9f3b-484d-8f95-49e8fbb783c0%22%2c%22Oid%22%3a%223a29e50f-3ecd-4d01-9b5a-9fcf0fc9c437%22%7d"
-      buttonLabel="Join Online"
-      icon="link"
+      buttonText="Watch"
     />
 
     {/* Add speaker section */}
