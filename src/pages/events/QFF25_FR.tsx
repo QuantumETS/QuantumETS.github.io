@@ -4,19 +4,18 @@ import Link from 'next/link';
 import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
-  EventActionButton,
   EventFAQ,
   EventGuests,
   EventLayout,
   EventSchedule,
   EventText,
   EventTitle,
-  StrikeInfoBanner,
 } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
   {
     title: "Atelier 1 : Introduction à l'informatique quantique",
+    titleHref: 'https://www.youtube.com/watch?v=FADoJ_gTgz4',
     date: '10 octobre 2025, 18:00 - 20:00',
     description:
       "Participez à l'atelier le plus populaire de QuantumÉTS ! Découvrez les bases de l'informatique quantique, de son histoire aux algorithmes modernes, grâce à des explications accessibles et des démonstrations de circuits en direct. Aucun prérequis en maths - la curiosité suffit !",
@@ -39,7 +38,6 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Journée de conférences - Inscriptions maintenant ouvertes !',
-    titleHref: 'https://www.eventbrite.ca/e/1716293513099?aff=oddtdtcreator',
     date: '14 novembre 2025, 8:30 - 17:00',
     description:
       "Une journée d'exposés inspirants d'experts de l'industrie, de chercheurs et de leaders communautaires, avec réseautage et panels. Détails à venir.",
@@ -147,16 +145,6 @@ const speakers: EventGuestItem[] = [
     imageSrc: '/assets/QiskitFallFest25/speakers/drouin-touchette.png',
   },
   {
-    guestName: 'Nathan Wiebe, University of Toronto',
-    guestTalk: (
-      <ul>
-        <li>Conférencier - Journée de conférences</li>
-        <li>Présentation : À déterminer</li>
-      </ul>
-    ),
-    imageSrc: '/assets/QiskitFallFest25/speakers/wiebe.jpg',
-  },
-  {
     guestName: 'Simon Verret, AlgoLab',
     guestTalk: (
       <ul>
@@ -211,27 +199,6 @@ const speakers: EventGuestItem[] = [
 
 const QFF25_FR: NextPage = () => (
   <EventLayout>
-    <StrikeInfoBanner
-      title="Information grève STM"
-      content={
-        <div>
-          <p className="mb-4">
-            <strong>Mise à jour (12 novembre 2025) :</strong> La grève de la STM
-            est suspendue. Toutes nos activités se déroulent comme prévu.
-          </p>
-          <p className="text-sm text-gray-600">
-            Pour toute nouvelle évolution, veuillez consulter les{' '}
-            <a
-              href="https://www.stm.info/fr/infos/etat-du-service/info-greve"
-              className="font-bold text-indigo-600 hover:underline"
-            >
-              mises à jour de la STM
-            </a>
-            .
-          </p>
-        </div>
-      }
-    />
     <EventTitle
       title="Qiskit Fall Fest 2025"
       logoSrc="/assets/QiskitFallFest25/Badge/Badge.png"
@@ -305,21 +272,9 @@ const QFF25_FR: NextPage = () => (
     <EventSchedule
       title="Programme et inscriptions"
       items={schedule}
-      buttonText="S'inscrire"
-    />
-    <EventActionButton
-      body="Vous pouvez télécharger le programme complet de la journée de conférences ici."
-      actionUrl="https://etsmtl365-my.sharepoint.com/:b:/g/personal/quantumets_etsmtl_ca/IQBaimkQgwMCTLzFaHjTSMx8AaKvqLj9OhYJXQaLrFD75qg?e=is6W3U"
-      buttonLabel="Télécharger le programme"
-      icon="download"
+      buttonText="Visionner"
     />
 
-    <EventActionButton
-      body="Bonne nouvelle ! La journée de conférence peut être suivie en ligne. Retrouvez le lien de diffusion ici."
-      actionUrl="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQxZDhmNjMtZGMwMC00NGQ0LWJjZTQtZjU5NThkMDBlZDI1%40thread.v2/0?context=%7b%22Tid%22%3a%2270aae3b7-9f3b-484d-8f95-49e8fbb783c0%22%2c%22Oid%22%3a%223a29e50f-3ecd-4d01-9b5a-9fcf0fc9c437%22%7d"
-      buttonLabel="Lien de diffusion"
-      icon="link"
-    />
     {/* Section des conférencier·ère·s */}
     <EventGuests title="Nos conférencier·ère·s" items={speakers} />
 
