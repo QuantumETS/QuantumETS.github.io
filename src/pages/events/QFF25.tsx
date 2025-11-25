@@ -15,7 +15,7 @@ import {
 const schedule: EventScheduleItem[] = [
   {
     title: 'Workshop 1 : Introduction to Quantum Computing',
-    titleHref: 'https://www.youtube.com/watch?v=FADoJ_gTgz4',
+    titleHref: 'https://youtu.be/FADoJ_gTgz4',
     date: 'October 10th, 2025, 18:00 - 20:00',
     description:
       'Join QuantumÉTS’ most popular workshop! Learn the fundamentals of quantum computing, from the history of quantum to the modern algorithms, through accessible explanations and live circuit demos. No math required, just curiosity!',
@@ -30,6 +30,7 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Workshop 3 : Mathematical Representation of Qubits',
+    titleHref: 'https://youtu.be/S3FqSe9KbO4',
     date: 'November 7th, 2025, 18:00 - 20:00',
     description: `Join us for an exploration of the mathematical concepts underlying qubits, revisiting the Bloch Sphere, vector spaces, Dirac notation, and more. This workshop will provide the foundation needed to understand quantum algorithms and their implementation in Qiskit. Suitable for those with a grasp of basic linear algebra.`,
     location:
