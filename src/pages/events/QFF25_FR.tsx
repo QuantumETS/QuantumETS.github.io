@@ -15,7 +15,7 @@ import {
 const schedule: EventScheduleItem[] = [
   {
     title: "Atelier 1 : Introduction à l'informatique quantique",
-    titleHref: 'https://www.youtube.com/watch?v=FADoJ_gTgz4',
+    titleHref: 'https://youtu.be/FADoJ_gTgz4',
     date: '10 octobre 2025, 18:00 - 20:00',
     description:
       "Participez à l'atelier le plus populaire de QuantumÉTS ! Découvrez les bases de l'informatique quantique, de son histoire aux algorithmes modernes, grâce à des explications accessibles et des démonstrations de circuits en direct. Aucun prérequis en maths - la curiosité suffit !",
@@ -30,6 +30,7 @@ const schedule: EventScheduleItem[] = [
   },
   {
     title: 'Atelier 3 : Représentation mathématique des qubits',
+    titleHref: 'https://youtu.be/S3FqSe9KbO4',
     date: '7 novembre 2025, 18:00 - 20:00',
     description:
       'Explorez les concepts mathématiques sous-jacents aux qubits : sphère de Bloch, espaces vectoriels, notation de Dirac et plus. Idéal si vous maîtrisez les bases de l’algèbre linéaire.',
