@@ -17,12 +17,12 @@ const Accueil = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar selectedTitle="Accueil" />
     <Hero />
+    <Banner />
     <Customer />
     <Members />
     <Activites />
     <Events />
     <FAQ />
-    <Banner />
     <Footer />
   </div>
 );
