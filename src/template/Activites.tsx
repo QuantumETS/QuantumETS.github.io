@@ -3,9 +3,9 @@ import { Section } from '../layout/Section';
 
 const Activites = () => (
   <Section
-    title="Club QuantumETS"
+    title="Club Quantum ÉTS"
     subtitle="Activités"
-    description="Activités auxquelles les membres de QuantumETS participent approfondir leurs connaissances sur l'informatique quantique."
+    description="Activités auxquelles les membres de Quantum ÉTS participent approfondir leurs connaissances sur l'informatique quantique."
   >
     <div className="grid grid-cols-1 gap-x-4 gap-y-16 sm:grid-cols-2 md:grid-cols-3">
       <FeatureElement

@@ -14,7 +14,7 @@ const Logo = (props: ILogoProps) => {
     <div className={`flex items-center text-gray-900 ${fontStyle}`}>
       <img
         src="/assets/images/Logo.svg"
-        alt="QuantumETS logo"
+        alt="Logo Quantum ÉTS"
         style={{
           height: `${size}px`,
           marginRight: '5px',
