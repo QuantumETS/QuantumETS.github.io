@@ -72,10 +72,12 @@ Si aucun événement n'est activé (`enabled: true`), le menu affiche automatiqu
 |-----------|-------------|----------------|
 | **EventLayout** | Gabarit de base avec navbar et footer | Structure de page |
 | **EventTitle** | Bannière avec titre, logo et dégradé | En-tête d'événement |
-| **EventText** | Section texte avec support d'images | Sections descriptives |
+| **TextSection** (*alias :* **EventText**) | Section texte avec support d'images | Sections descriptives |
 | **EventSchedule** | Tableau d'horaires avec inscriptions | Programme détaillé |
-| **EventGuests** | Grille de conférenciers avec photos | Présentation des intervenants |
-| **EventFAQ** | Questions-réponses pliables | Informations pratiques |
+| **BioSection** (*wrappers :* **EventGuests** / **EventGuestItem**) | Liste de bios (invités/conférenciers) | Présentation des intervenants |
+| **FAQAccordion** (*alias :* **EventFAQ** / **EventFAQItem**) | Questions-réponses pliables | Informations pratiques |
+| **ActionButtonSection** | Section “bouton d'action” (lien + icône) | Téléchargement / inscription / lien |
+| **AlertBannerDialog** | Bannière cliquable ouvrant un popup d'information | Alertes / infos importantes |
 
 ## Référence des composants
 
@@ -100,7 +102,7 @@ const MonEvenement: NextPage = () => (
 Bannière d'en-tête avec titre, logo optionnel et dégradé de couleur personnalisable.
 
 ```tsx
-import { EventTitle } from '../../template/pages/Events';
+import { EventTitle } from '../../event/EventTitle';
 
 <EventTitle 
   title="Mon Événement 2025"
@@ -119,10 +121,12 @@ import { EventTitle } from '../../template/pages/Events';
 
 ### EventText
 
-Section de texte répétable avec en-tête, contenu et support d'images. Génère automatiquement des ancres pour la navigation directe.
+Section de texte répétable avec en-tête, contenu et support d'images.
+
+> Note : `TextSection` est le nom générique du composant. `EventText` est gardé comme alias compatible pour les pages d'événements existantes.
 
 ```tsx
-import { EventText } from '../../template/pages/Events';
+import { EventText } from '../../layout/TextSection';
 
 <EventText 
   header="À propos de l'événement"
@@ -139,24 +143,32 @@ import { EventText } from '../../template/pages/Events';
 ```
 
 **Props :**
+
 - `header` (string, requis) : Titre de la section
-- `header_color` (string, optionnel) : Classe Tailwind pour la couleur du titre
-- `body` (string | JSX.Element, requis) : Contenu de la section
+- `header_color` (string, optionnel) : Classe Tailwind pour la couleur du titre (alias `EventText` seulement)
+- `body` (React.ReactNode, requis) : Contenu de la section
 - `imageSrc` (string, optionnel) : Chemin vers l'image d'illustration
 - `imagePosition` ('left' | 'right', optionnel) : Position de l'image (défaut: `"left"`)
 - `imageAlt` (string, optionnel) : Texte alternatif de l'image
 
-**Fonctionnalités :**
-- Génération automatique d'ancres (ex: "À propos" → `#à-propos`)
-- Mise en page responsive avec image
-- Support de contenu JSX riche
+**Alternative (recommandée pour nouveau code) :**
+
+```tsx
+import { TextSection } from '../../layout/TextSection';
+
+<TextSection
+  header="À propos de l'événement"
+  headerColor="text-purple-700"
+  body={<p>Contenu riche…</p>}
+/>
+```
 
 ### EventSchedule
 
 Tableau d'horaires avec boutons d'inscription et colonnes pour titre, date, description et lieu.
 
 ```tsx
-import { EventSchedule, type EventScheduleItem } from '../../template/pages/Events';
+import { EventSchedule, type EventScheduleItem } from '../../event/EventSchedule';
 
 const schedule: EventScheduleItem[] = [
   {
@@ -182,11 +194,13 @@ const schedule: EventScheduleItem[] = [
 ```
 
 **Props :**
+
 - `title` (string, requis) : Titre de la section d'horaires
 - `items` (EventScheduleItem[], requis) : Liste des éléments du programme
 - `buttonText` (string, requis) : Texte du bouton d'inscription
 
 **Type EventScheduleItem :**
+
 - `title` (string, requis) : Nom de l'activité
 - `titleHref` (string, optionnel) : Lien d'inscription externe
 - `date` (string, requis) : Date et heure de l'activité
@@ -198,7 +212,7 @@ const schedule: EventScheduleItem[] = [
 Grille responsive de conférenciers et invités avec photos circulaires, présentations et biographies.
 
 ```tsx
-import { EventGuests, type EventGuestItem } from '../../template/pages/Events';
+import { EventGuests, type EventGuestItem } from '../../members/BioSection';
 
 const speakers: EventGuestItem[] = [
   {
@@ -231,16 +245,19 @@ const speakers: EventGuestItem[] = [
 ```
 
 **Props :**
+
 - `title` (string, optionnel) : Titre de la section (défaut: `"Guests"`)
 - `items` (EventGuestItem[], requis) : Liste des conférenciers/invités
 
 **Type EventGuestItem :**
+
 - `guestName` (string, requis) : Nom du conférencier
 - `guestTalk` (string | JSX.Element, optionnel) : Titre de présentation ou contenu JSX
 - `body` (string | JSX.Element, optionnel) : Biographie ou description
 - `imageSrc` (string, optionnel) : Chemin vers la photo du conférencier
 
 **Fonctionnalités :**
+
 - Photos circulaires automatiques (96px × 96px)
 - Mise en page responsive (1 colonne mobile, 2 colonnes desktop)
 - Support de contenu JSX pour présentations et biographies
@@ -250,7 +267,7 @@ const speakers: EventGuestItem[] = [
 Section de questions-réponses avec éléments pliables/dépliables et animations.
 
 ```tsx
-import { EventFAQ, type EventFAQItem } from '../../template/pages/Events';
+import { EventFAQ, type EventFAQItem } from '../../faq/FAQAccordion';
 
 const faqItems: EventFAQItem[] = [
   {
@@ -279,36 +296,86 @@ const faqItems: EventFAQItem[] = [
 ```
 
 **Props :**
+
 - `title` (string, optionnel) : Titre de la section (défaut: `"FAQ"`)
 - `items` (EventFAQItem[], requis) : Liste des questions-réponses
 
 **Type EventFAQItem :**
+
 - `question` (string, requis) : Texte de la question
 - `answer` (string | JSX.Element, requis) : Réponse (texte ou contenu JSX)
 - `defaultOpen` (boolean, optionnel) : État d'ouverture par défaut (défaut: `false`)
 
 **Fonctionnalités :**
+
 - Animation d'ouverture/fermeture fluide
 - Support de contenu JSX riche dans les réponses
 - États d'ouverture configurables individuellement
 
+### ActionButtonSection
+
+Section simple avec un bouton (lien) et une icône. Utile pour : téléchargement d'un PDF, lien d'inscription, site officiel, etc.
+
+```tsx
+import { ActionButtonSection } from '../../cta/ActionButtonSection';
+
+<ActionButtonSection
+  body={<p>Inscrivez-vous pour recevoir les informations de l'événement.</p>}
+  buttonLabel="S'inscrire"
+  actionUrl="https://example.com/register"
+  icon="link"
+/>
+```
+
+**Props :**
+
+- `body` (React.ReactNode, requis) : Texte/JSX affiché au-dessus du bouton
+- `buttonLabel` (string, requis) : Libellé du bouton
+- `actionUrl` (string, requis) : URL cible (lien)
+- `icon` ('download' | 'link' | 'external', optionnel) : Icône (défaut: `'download'`)
+
+### AlertBannerDialog
+
+Bannière cliquable qui ouvre un popup (dialog) avec du contenu informatif.
+
+```tsx
+import { AlertBannerDialog } from '../../alert/AlertBannerDialog';
+
+<AlertBannerDialog
+  title="Info importante"
+  bannerClassName="bg-amber-600 hover:bg-amber-700"
+  content={
+    <div>
+      <p>Le programme est sujet à changement.</p>
+      <p className="mt-3">Consultez cette section avant de vous déplacer.</p>
+    </div>
+  }
+/>
+```
+
+**Props :**
+
+- `title` (string, requis) : Texte affiché dans la bannière et le dialog
+- `content` (React.ReactNode, requis) : Contenu du dialog
+- `bannerClassName` (string, optionnel) : Permet de surcharger/ajouter des classes Tailwind (ex: couleurs `bg-*`)
+
 ## Exemple complet
+
+> Note : savais-tu qu'il existe une page d'exemple d'événement cachée dans le projet ? Tu peux la trouver à `src/pages/events/event-example.tsx` ou directement à l'URL `/events/event-example` sur le site.
 
 Voici un exemple d'une page d'événement complète utilisant tous les composants :
 
 ```tsx
 import type { NextPage } from 'next';
-import { 
-  EventLayout, 
-  EventTitle, 
-  EventText, 
-  EventSchedule, 
-  EventGuests,
-  EventFAQ,
-  type EventScheduleItem,
-  type EventGuestItem,
-  type EventFAQItem
-} from '../../template/pages/Events';
+
+import { AlertBannerDialog } from '../../alert/AlertBannerDialog';
+import { ActionButtonSection } from '../../cta/ActionButtonSection';
+import { EventSchedule, type EventScheduleItem } from '../../event/EventSchedule';
+import { EventTitle } from '../../event/EventTitle';
+import { EventText } from '../../layout/TextSection';
+import { EventGuests, type EventGuestItem } from '../../members/BioSection';
+import { EventFAQ, type EventFAQItem } from '../../faq/FAQAccordion';
+import { EventLayout } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
   {
@@ -344,6 +411,12 @@ const MonEvenement: NextPage = () => (
       gradientFrom="from-green-600"
       gradientTo="to-blue-600"
     />
+
+    <AlertBannerDialog
+      title="Info : programme sujet à changement"
+      bannerClassName="bg-amber-600 hover:bg-amber-700"
+      content={<p>Vérifiez cette page le matin de l'événement.</p>}
+    />
     
     <EventText 
       header="À propos du symposium"
@@ -367,6 +440,13 @@ const MonEvenement: NextPage = () => (
     <EventFAQ 
       title="Informations pratiques"
       items={faq}
+    />
+
+    <ActionButtonSection
+      body={<p>Téléchargez l'affiche de l'événement.</p>}
+      buttonLabel="Télécharger"
+      actionUrl="https://example.com/affiche.pdf"
+      icon="download"
     />
   </EventLayout>
 );

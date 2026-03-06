@@ -162,7 +162,15 @@ La gestion complète des pages d'événements est documentée dans [docs/events-
 
 - **Créer une page** : Ajouter un fichier sous `src/pages/events/mon-evenement.tsx`
 - **Ajouter au menu** : Modifier le tableau `eventLinks` dans `src/template/Navbar.tsx`
-- **Composants disponibles** : `EventTitle`, `EventText`, `EventSchedule`, `EventGuests`, `EventFAQ`, `EventLayout`
+- **Composants disponibles** :
+  - `EventLayout` (shell/page wrapper)
+  - `EventTitle`
+  - `TextSection` (alias compatible : `EventText`)
+  - `EventSchedule`
+  - `FAQAccordion` (alias compatible : `EventFAQ`)
+  - `BioSection` (wrappers compatibles : `EventGuests` / `EventGuestItem`)
+  - `ActionButtonSection`
+  - `AlertBannerDialog`
 
 Consultez la [documentation complète](docs/events-maintenance.md) pour les détails d'utilisation de chaque composant et des exemples de code.
 

@@ -11,6 +11,7 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "check-types": "tsc --noEmit --pretty",
+    "build-types": "npm run check-types",
     "prepare": "husky install"
   },
   "dependencies": {

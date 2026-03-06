@@ -5,13 +5,13 @@ const FAQ = () => (
   <Section
     title="Vous avez des questions?"
     subtitle="FAQ"
-    description="Quelques questions/réponses fréquentes concernant le club QuantumETS. Si vous avez d'autres interrogations veuillez communiquez avec l'équipe (voir la page &quot;Contact&quot;)."
+    description="Quelques questions/réponses fréquentes concernant le club Quantum ÉTS. Si vous avez d'autres interrogations veuillez communiquez avec l'équipe (voir la page &quot;Contact&quot;)."
   >
     <div className="flex flex-col">
       <QuestionAnswer question="Je suis un partenaire potentiel comment puis-je vous soutenir?">
         <p>
-          En tant que partenaire potentiel, vous pouvez soutenir le club
-          QuantumETS de plusieurs manières, notamment :
+          En tant que partenaire potentiel, vous pouvez soutenir le club Quantum
+          ÉTS de plusieurs manières, notamment :
         </p>
         <div className="ml-8">
           <ol className="list-disc">
@@ -44,27 +44,27 @@ const FAQ = () => (
           club, veuillez nous contacter (voir la page &quot;Contact&quot;).
         </p>
       </QuestionAnswer>
-      <QuestionAnswer question="Qui peut rejoindre QuantumETS?">
+      <QuestionAnswer question="Qui peut rejoindre Quantum ÉTS?">
         <p>
           Tous les étudiants de l&rsquo;École de technologie supérieure (ETS)
           qui sont intéressés par l&rsquo;informatique quantique peuvent
-          rejoindre QuantumETS. Les membres du club proviennent de différentes
+          rejoindre Quantum ÉTS. Les membres du club proviennent de différentes
           facultés et programmes, ce qui crée un environnement diversifié et
           stimulant pour tous les membres.
         </p>
       </QuestionAnswer>
-      <QuestionAnswer question="Ai-je besoin de connaissances préalables en informatique quantique pour rejoindre QuantumETS?">
+      <QuestionAnswer question="Ai-je besoin de connaissances préalables en informatique quantique pour rejoindre Quantum ÉTS?">
         <p>
-          Non, QuantumETS accueille tous les niveaux de compétences et de
+          Non, Quantum ÉTS accueille tous les niveaux de compétences et de
           connaissances en informatique quantique. Les membres du club ont des
           antécédents académiques et professionnels différents et sont tous
           motivés à apprendre et à se développer dans le domaine de
           l&rsquo;informatique quantique.
         </p>
       </QuestionAnswer>
-      <QuestionAnswer question="Quel est l'engagement de temps attendu pour les membres de QuantumETS?">
+      <QuestionAnswer question="Quel est l'engagement de temps attendu pour les membres de Quantum ÉTS?">
         <p>
-          QuantumETS encourage la participation active de ses membres, mais
+          Quantum ÉTS encourage la participation active de ses membres, mais
           l&rsquo;engagement de temps varie en fonction des intérêts et des
           horaires de chaque membre. Les rencontres du club ont lieu deux fois
           par mois pour présenter l&rsquo;actualité quantique, les opportunités

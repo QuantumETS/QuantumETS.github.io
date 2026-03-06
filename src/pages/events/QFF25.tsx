@@ -1,16 +1,16 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
-import type { EventGuestItem } from '../../template/pages/Events';
 import {
   type EventScheduleItem,
-  EventFAQ,
-  EventGuests,
-  EventLayout,
   EventSchedule,
-  EventText,
-  EventTitle,
-} from '../../template/pages/Events';
+} from '../../event/EventSchedule';
+import { EventTitle } from '../../event/EventTitle';
+import { EventFAQ } from '../../faq/FAQAccordion';
+import { EventText } from '../../layout/TextSection';
+import type { EventGuestItem } from '../../members/BioSection';
+import { EventGuests } from '../../members/BioSection';
+import { EventLayout } from '../../template/pages/Events';
 
 const schedule: EventScheduleItem[] = [
   {
