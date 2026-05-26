@@ -9,6 +9,7 @@ import { Logo } from './Logo';
 interface NavbarProps {
   selectedTitle:
     | 'Accueil'
+    | 'Compétitions'
     | 'Apprendre'
     | 'Partenaire'
     | 'Atelier'
@@ -50,6 +51,15 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
             }
           >
             <Link href="/notebook">Apprendre</Link>
+          </li>
+          <li
+            style={
+              selectedTitle === 'Compétitions'
+                ? { borderBottom: '4px solid #6246EA' }
+                : {}
+            }
+          >
+            <Link href="/competitions">Compétitions</Link>
           </li>
           <li
             style={
