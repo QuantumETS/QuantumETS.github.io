@@ -45,21 +45,21 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
           </li>
           <li
             style={
-              selectedTitle === 'Apprendre'
-                ? { borderBottom: '4px solid #6246EA' }
-                : {}
-            }
-          >
-            <Link href="/notebook">Apprendre</Link>
-          </li>
-          <li
-            style={
               selectedTitle === 'Compétitions'
                 ? { borderBottom: '4px solid #6246EA' }
                 : {}
             }
           >
             <Link href="/competitions">Compétitions</Link>
+          </li>
+          <li
+            style={
+              selectedTitle === 'Apprendre'
+                ? { borderBottom: '4px solid #6246EA' }
+                : {}
+            }
+          >
+            <Link href="/notebook">Apprendre</Link>
           </li>
           <li
             style={
