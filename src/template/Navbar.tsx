@@ -9,14 +9,15 @@ import { Logo } from './Logo';
 interface NavbarProps {
   selectedTitle:
     | 'Accueil'
+    | 'Compétitions'
     | 'Apprendre'
     | 'Partenaire'
-    | 'Atelier'
     | 'Événements';
 }
 
 export const Navbar = ({ selectedTitle }: NavbarProps) => {
   const [eventsOpen, setEventsOpen] = useState(false);
+  const [apprendreOpen, setApprendreOpen] = useState(false);
 
   // Events dropdown items maintenance
   // - To add: push an item { href: '/events/my-event', label: 'My Event', enabled: true }
@@ -43,13 +44,53 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
             <Link href="/">Accueil</Link>
           </li>
           <li
+            className="relative"
+            style={
+              selectedTitle === 'Compétitions'
+                ? { borderBottom: '4px solid #6246EA' }
+                : {}
+            }
+          >
+            <Link href="/competitions">Compétitions</Link>
+          </li>
+          <li
             style={
               selectedTitle === 'Apprendre'
                 ? { borderBottom: '4px solid #6246EA' }
                 : {}
             }
           >
-            <Link href="/notebook">Apprendre</Link>
+            <button
+              type="button"
+              className="flex w-full items-center gap-1 text-left"
+              onClick={() => setApprendreOpen((o) => !o)}
+            >
+              Apprendre
+              <svg
+                className={`h-4 w-4 transition-transform ${
+                  apprendreOpen ? 'rotate-180' : ''
+                }`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            {apprendreOpen && (
+              <ul className="absolute left-0 z-20 mt-2 w-56 rounded-md bg-white py-2 shadow-lg ring-1 ring-black/5 sm:w-64 sm:py-2 sm:text-base">
+                <li className="px-4 py-2 hover:bg-gray-50">
+                  <Link href="/notebooks">Notebooks</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-50">
+                  <Link href="/workshops">Atelier</Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li
             style={
@@ -59,15 +100,6 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
             }
           >
             <Link href="/contact">Partenaire</Link>
-          </li>
-          <li
-            style={
-              selectedTitle === 'Atelier'
-                ? { borderBottom: '4px solid #6246EA' }
-                : {}
-            }
-          >
-            <Link href="/workshop">Atelier</Link>
           </li>
           <li
             className="relative"
