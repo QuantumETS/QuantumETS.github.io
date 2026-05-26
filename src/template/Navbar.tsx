@@ -7,7 +7,12 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 interface NavbarProps {
-  selectedTitle: 'Accueil' | 'Apprendre' | 'Partenaire' | 'Événements';
+  selectedTitle:
+    | 'Accueil'
+    | 'Compétitions'
+    | 'Apprendre'
+    | 'Partenaire'
+    | 'Événements';
 }
 
 export const Navbar = ({ selectedTitle }: NavbarProps) => {
@@ -40,6 +45,15 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
           </li>
           <li
             className="relative"
+            style={
+              selectedTitle === 'Compétitions'
+                ? { borderBottom: '4px solid #6246EA' }
+                : {}
+            }
+          >
+            <Link href="/competitions">Compétitions</Link>
+          </li>
+          <li
             style={
               selectedTitle === 'Apprendre'
                 ? { borderBottom: '4px solid #6246EA' }

@@ -1,7 +1,6 @@
 import { Meta } from '../../layout/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 import { SocialLinks } from '../../utils/SocialLinks';
-import { Events } from '../Events';
 import { Footer } from '../Footer';
 // import { Pricing } from './Pricing';
 // import { Testimonial } from './Testimonial';
@@ -13,7 +12,6 @@ const Contact = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar selectedTitle="Partenaire" />
     <Pricing />
-    <Events />
     <div className="m-10 flex flex-col items-center justify-center">
       <a
         href={SocialLinks.email}

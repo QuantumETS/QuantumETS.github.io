@@ -5,7 +5,6 @@ import { Banner } from '../Banner';
 import { Customer } from '../Customer';
 // import { Pricing } from './Pricing';
 // import { Testimonial } from './Testimonial';
-import { Events } from '../Events';
 import { FAQ } from '../FAQ';
 import { Footer } from '../Footer';
 import { Hero } from '../Hero';
@@ -21,7 +20,6 @@ const Accueil = () => (
     <Customer />
     <Members />
     <Activites />
-    <Events />
     <FAQ />
     <Footer />
   </div>
