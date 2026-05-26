@@ -7,7 +7,7 @@ import { WorkshopList } from '../WorkshopList';
 const Workshop = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Navbar selectedTitle="Atelier" />
+    <Navbar selectedTitle="Apprendre" />
     <WorkshopList />
     <Footer />
   </div>
