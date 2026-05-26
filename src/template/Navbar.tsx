@@ -49,7 +49,7 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
                 : {}
             }
           >
-            <Link href="/notebook">Apprendre</Link>
+            <Link href="/notebooks">Apprendre</Link>
           </li>
           <li
             style={
