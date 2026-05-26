@@ -67,7 +67,7 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
                 : {}
             }
           >
-            <Link href="/workshop">Atelier</Link>
+            <Link href="/workshops">Atelier</Link>
           </li>
           <li
             className="relative"
