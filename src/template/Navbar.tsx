@@ -54,6 +54,7 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
             <Link href="/competitions">Compétitions</Link>
           </li>
           <li
+            className="relative"
             style={
               selectedTitle === 'Apprendre'
                 ? { borderBottom: '4px solid #6246EA' }
