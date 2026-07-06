@@ -23,7 +23,7 @@ const Pricing = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Plan de partenariat
+            Plan détaillé
           </a>
         </div>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
