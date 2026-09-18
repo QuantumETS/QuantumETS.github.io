@@ -56,8 +56,8 @@ const Rentree: NextPage = () => (
       body={
         <p>
           Quantum ÉTS lance la nouvelle session avec son événement de la
-          rentrée ! Restez à l'affût, d'autres activités seront ajoutées au
-          programme au fil de la session.
+          rentrée&nbsp;! Restez à l&apos;affût, d&apos;autres activités seront
+          ajoutées au programme au fil de la session.
         </p>
       }
     />
