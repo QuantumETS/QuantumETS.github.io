@@ -25,7 +25,11 @@ export const Navbar = ({ selectedTitle }: NavbarProps) => {
   // - To remove completely: delete the entry (and optionally the page under src/pages/events)
   type EventLink = { href: string; label: string; enabled?: boolean };
   const eventLinks: EventLink[] = [
-    { href: '/events/rentree', label: 'Événement de la rentrée', enabled: true },
+    {
+      href: '/events/rentree',
+      label: 'Événement de la rentrée',
+      enabled: true,
+    },
     { href: '/events/QFF25_FR', label: 'Qiskit Fall Fest 2025', enabled: true },
     // { href: '/events/event-example', label: 'Event Example', enabled: false },
   ];
