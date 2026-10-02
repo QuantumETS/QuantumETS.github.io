@@ -26,8 +26,9 @@ const schedule: EventScheduleItem[] = [
   {
     title: '1er atelier',
     date: '2 octobre 2026',
-    description: 'Contenu à déterminer.',
-    location: 'A-1600',
+    description:
+      "Découvrez les bases de l'informatique quantique et ce qui la distingue de l'informatique classique.",
+    location: 'D-3017',
   },
   {
     title: '2e atelier',
