@@ -8,12 +8,12 @@ const Members = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-gray-200 xl:grid-cols-3">
         <TestimonialCard
           image={{
-            src: '/assets/images/members/samuel_richard.jpg',
-            alt: 'Samuel Richard',
+            src: '/assets/images/members/xavier_bergeron.png',
+            alt: 'Xavier Bergeron',
           }}
           author={{
-            name: 'Samuel Richard',
-            position: 'Président & Fondateur',
+            name: 'Xavier Bergeron',
+            position: 'Président',
           }}
         />
         <TestimonialCard
@@ -84,6 +84,16 @@ const Members = () => (
           author={{
             name: 'Charles Choupin',
             position: 'Soutien administratif',
+          }}
+        />
+        <TestimonialCard
+          image={{
+            src: '/assets/images/members/samuel_montambault.jpg',
+            alt: 'Samuel',
+          }}
+          author={{
+            name: 'Samuel',
+            position: 'Administrative staff',
           }}
         />
         <TestimonialCard
