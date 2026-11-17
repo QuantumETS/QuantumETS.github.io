@@ -88,12 +88,12 @@ const Members = () => (
         />
         <TestimonialCard
           image={{
-            src: '/assets/images/members/samuel_montambault.jpg',
-            alt: 'Samuel',
+            src: '/assets/images/members/samuel_richard.jpg',
+            alt: 'Samuel Richard',
           }}
           author={{
-            name: 'Samuel',
-            position: 'Administrative Staff',
+            name: 'Samuel Richard',
+            position: 'Soutien administratif',
           }}
         />
         <TestimonialCard
