@@ -93,7 +93,7 @@ const Members = () => (
           }}
           author={{
             name: 'Samuel',
-            position: 'Administrative staff',
+            position: 'Administrative Staff',
           }}
         />
         <TestimonialCard
